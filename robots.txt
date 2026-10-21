@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dh1software.com/sitemap.xml
