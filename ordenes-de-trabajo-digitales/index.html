@@ -101,6 +101,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/landing.css">
+<link rel="stylesheet" href="/assets/demo-form.css">
 </head>
 <body>
 
@@ -122,7 +123,7 @@
     <h1>Órdenes de trabajo digitales, <em>con firma y GPS</em>.</h1>
     <p class="lead">Reemplazá la OT en papel por una orden que se crea, se asigna y se cierra desde el celular. Cada cierre queda con firma digital, ubicación GPS y fotos de evidencia, vinculado a la obra o al equipo.</p>
     <div class="btns">
-      <a href="mailto:emanuelbenitez.a@outlook.com?subject=Consulta%20DH1%20Software%20%E2%80%94%20%C3%93rdenes%20de%20trabajo%20digitales&amp;body=Hola%2C%0A%0AMe%20interesa%20conocer%20DH1%20Software%20y%20quisiera%20agendar%20una%20demo.%0A%0ANombre%3A%0AEmpresa%3A%0ARubro%3A%0ATel%C3%A9fono%3A%0A%0AComentarios%3A%0A" class="btn-primary">Solicitar demo gratuita<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="#demo" class="btn-primary">Solicitar demo gratuita<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
       <a href="#funciones" class="btn-ghost">Ver funciones</a>
     </div>
   </div>
@@ -195,10 +196,7 @@
 <section class="l-cta" id="demo">
   <h2>Cerrá tu primera OT digital <em>esta semana.</em></h2>
   <p>Agendá una demo personalizada. Te mostramos DH1 funcionando con un caso similar al tuyo, sin compromiso.</p>
-  <div class="btns">
-    <a href="mailto:emanuelbenitez.a@outlook.com?subject=Consulta%20DH1%20Software%20%E2%80%94%20%C3%93rdenes%20de%20trabajo%20digitales&amp;body=Hola%2C%0A%0AMe%20interesa%20conocer%20DH1%20Software%20y%20quisiera%20agendar%20una%20demo.%0A%0ANombre%3A%0AEmpresa%3A%0ARubro%3A%0ATel%C3%A9fono%3A%0A%0AComentarios%3A%0A" class="btn-primary">Solicitar demo<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-    <a href="/" class="btn-ghost">Conocer DH1</a>
-  </div>
+  <form class="demo-form" data-subject="Solicitud de demo — Órdenes de trabajo digitales" novalidate>     <div class="df-grid">       <label><span>Nombre *</span><input name="nombre" required autocomplete="name"></label>       <label><span>Empresa *</span><input name="empresa" required autocomplete="organization"></label>       <label><span>Email *</span><input type="email" name="email" required autocomplete="email"></label>       <label><span>Teléfono</span><input type="tel" name="telefono" autocomplete="tel"></label>       <label class="df-full"><span>Rubro</span><input name="rubro" placeholder="Construcción, mantenimiento, servicios…"></label>       <label class="df-full"><span>Comentarios</span><textarea name="comentarios" rows="4" placeholder="Contanos brevemente qué querés resolver"></textarea></label>     </div>     <input type="checkbox" name="botcheck" class="df-hp" tabindex="-1" autocomplete="off" aria-hidden="true">     <div class="df-actions">       <button type="submit" class="btn-primary">Solicitar demo<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></button>       <p class="df-status" role="status" aria-live="polite"></p>     </div>   </form>
 </section>
 </main>
 
@@ -215,5 +213,6 @@
   </div>
 </footer>
 
+<script src="/assets/demo-form.js" defer></script>
 </body>
 </html>

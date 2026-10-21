@@ -1,0 +1,21 @@
+/* Formulario de solicitud de demo (index y landings) */
+.demo-form{max-width:640px;margin:0 auto;text-align:left;background:rgba(10,14,26,0.55);border:1px solid var(--dh-line-strong);border-radius:20px;padding:clamp(20px,3.5vw,32px);backdrop-filter:blur(10px)}
+.df-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 16px}
+.df-grid label{display:flex;flex-direction:column;gap:6px;min-width:0}
+.df-grid .df-full{grid-column:1/-1}
+.df-grid span{font-size:13px;font-weight:500;color:var(--dh-text-dim)}
+.df-grid input,.df-grid textarea{width:100%;padding:12px 14px;background:rgba(255,255,255,0.04);border:1px solid var(--dh-line-strong);border-radius:10px;color:#fff;font:inherit;font-size:15px;transition:border-color .2s,background .2s}
+.df-grid textarea{resize:vertical;min-height:96px}
+.df-grid input::placeholder,.df-grid textarea::placeholder{color:rgba(255,255,255,0.35)}
+.df-grid input:focus,.df-grid textarea:focus{outline:none;border-color:var(--dh-blue-bright);background:rgba(46,108,214,0.08)}
+.df-grid input.df-invalid{border-color:#e5484d}
+.df-hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.demo-form .df-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:20px}
+.demo-form button.btn-primary{border:0;cursor:pointer;font-family:inherit}
+.demo-form button.btn-primary:disabled{opacity:.6;cursor:wait;transform:none}
+.df-status{font-size:14px;color:var(--dh-text-dim);margin:0}
+.df-status.ok{color:#3dd68c}
+.df-status.err{color:#ff8a8a}
+.demo-form.sent .df-grid,.demo-form.sent .df-actions button{display:none}
+.demo-form.sent .df-status{font-size:16px;text-align:center;width:100%}
+@media(max-width:560px){.df-grid{grid-template-columns:1fr}}

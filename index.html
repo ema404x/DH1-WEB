@@ -375,6 +375,7 @@ footer{padding:clamp(40px,6vw,60px) clamp(18px,4vw,40px) 30px;background:var(--d
 }
 
 </style>
+<link rel="stylesheet" href="/assets/demo-form.css">
 </head>
 <body>
 
@@ -693,9 +694,7 @@ footer{padding:clamp(40px,6vw,60px) clamp(18px,4vw,40px) 30px;background:var(--d
 <section id="contacto" class="cta-final">
   <h2>Lleva tu operación al<br><em>siguiente nivel.</em></h2>
   <p>Agendá una demo personalizada. Te mostramos DH1 funcionando con un caso similar al tuyo — sin compromiso.</p>
-  <div class="btns">
-    <a href="mailto:emanuelbenitez.a@outlook.com?subject=Consulta%20DH1%20Software%20%E2%80%94%20Solicitud%20de%20demo&body=Hola%2C%0A%0AMe%20interesa%20conocer%20DH1%20Software%20y%20quisiera%20agendar%20una%20demo.%0A%0ANombre%3A%0AEmpresa%3A%0ARubro%3A%0ATel%C3%A9fono%3A%0A%0AComentarios%3A%0A" class="btn-primary">Solicitar demo<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-  </div>
+  <form class="demo-form" data-subject="Solicitud de demo — DH1 Software" novalidate>     <div class="df-grid">       <label><span>Nombre *</span><input name="nombre" required autocomplete="name"></label>       <label><span>Empresa *</span><input name="empresa" required autocomplete="organization"></label>       <label><span>Email *</span><input type="email" name="email" required autocomplete="email"></label>       <label><span>Teléfono</span><input type="tel" name="telefono" autocomplete="tel"></label>       <label class="df-full"><span>Rubro</span><input name="rubro" placeholder="Construcción, mantenimiento, servicios…"></label>       <label class="df-full"><span>Comentarios</span><textarea name="comentarios" rows="4" placeholder="Contanos brevemente qué querés resolver"></textarea></label>     </div>     <input type="checkbox" name="botcheck" class="df-hp" tabindex="-1" autocomplete="off" aria-hidden="true">     <div class="df-actions">       <button type="submit" class="btn-primary">Solicitar demo<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></button>       <p class="df-status" role="status" aria-live="polite"></p>     </div>   </form>
 </section>
 
 <footer>
@@ -783,5 +782,6 @@ const io=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isInterse
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',(e)=>{const id=a.getAttribute('href');if(id==='#'||id.length<2)return;const el=document.querySelector(id);if(!el)return;e.preventDefault();window.scrollTo({top:el.offsetTop-70,behavior:'smooth'})})});
 </script>
+<script src="/assets/demo-form.js" defer></script>
 </body>
 </html>
