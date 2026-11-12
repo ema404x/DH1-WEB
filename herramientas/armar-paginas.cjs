@@ -276,10 +276,10 @@ const PAGINAS = [
   },
   {
     ruta: 'erp-constructoras',
-    nav: 'Constructoras',
+    nav: 'Obras',
     titulo: 'Gestión de obras de mantenimiento | DH1 Software',
-    desc: 'Software de gestión para empresas constructoras: obras, avance, presupuestos por rubro, proveedores, inventario con QR del depósito a la obra y personal asignado. Desarrollado en Argentina.',
-    miga: 'ERP para constructoras',
+    desc: 'Software de gestión de obras de mantenimiento: obras con jefe de sitio, inspector y plazo, alerta de atraso, presupuestos, proveedores, pañol con QR del depósito a la obra, cuadrillas y certificación. Desarrollado en Argentina.',
+    miga: 'Gestión de obras de mantenimiento',
     escala: 'Una obra de 90 días',
     portada: {
       etq: 'Día 1', grande: 'Día<span> </span>1',
