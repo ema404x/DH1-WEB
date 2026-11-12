@@ -277,7 +277,7 @@ const PAGINAS = [
   {
     ruta: 'erp-constructoras',
     nav: 'Constructoras',
-    titulo: 'ERP para constructoras — Gestión de obras | DH1 Software',
+    titulo: 'Gestión de obras de mantenimiento | DH1 Software',
     desc: 'Software de gestión para empresas constructoras: obras, avance, presupuestos por rubro, proveedores, inventario con QR del depósito a la obra y personal asignado. Desarrollado en Argentina.',
     miga: 'ERP para constructoras',
     escala: 'Una obra de 90 días',
