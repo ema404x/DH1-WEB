@@ -283,8 +283,8 @@ const PAGINAS = [
     escala: 'Una obra de 90 días',
     portada: {
       etq: 'Día 1', grande: 'Día<span> </span>1',
-      h1: 'Noventa días de obra <em>en un solo lugar.</em>',
-      bajada: 'Una obra entra con su jefe, su inspector y su plazo. Después vienen los presupuestos, los materiales, las cuadrillas, las órdenes y los certificados. <strong>Esta es una obra de 90 días contada por DH1.</strong>',
+      h1: 'Noventa días de mantenimiento <em>en un solo lugar.</em>',
+      bajada: 'Una refacción en una escuela entra con su jefe de sitio, su inspector y su plazo. Después vienen los presupuestos, los materiales del pañol, las cuadrillas, las órdenes y los certificados. <strong>Estos son 90 días de una obra de mantenimiento, contados por DH1.</strong>',
       nota: 'Bajá: el reloj de la izquierda ahora cuenta los días de obra.',
     },
     caps: [
