@@ -8,6 +8,7 @@
 <link rel="canonical" href="https://dh1software.com/erp-constructoras/">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#0a0e1a">
+<meta name="color-scheme" content="dark">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -21,6 +22,8 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ERP para constructoras — Gestión de obras | DH1 Software">
+<meta name="twitter:description" content="Software de gestión para empresas constructoras: obras, avance, presupuestos por rubro, proveedores, inventario con QR del depósito a la obra y personal asignado. Desarrollado en Argentina.">
 <meta name="twitter:image" content="https://dh1software.com/og-image.png">
 <script type="application/ld+json">
 {
@@ -28,16 +31,16 @@
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://dh1software.com/erp-constructoras/",
+      "@id": "https://dh1software.com/erp-constructoras/#pagina",
       "url": "https://dh1software.com/erp-constructoras/",
       "name": "ERP para constructoras — Gestión de obras | DH1 Software",
       "description": "Software de gestión para empresas constructoras: obras, avance, presupuestos por rubro, proveedores, inventario con QR del depósito a la obra y personal asignado. Desarrollado en Argentina.",
       "inLanguage": "es-AR",
       "isPartOf": {
-        "@id": "https://dh1software.com/#website"
+        "@id": "https://dh1software.com/#web"
       },
-      "about": {
-        "@id": "https://dh1software.com/#software"
+      "publisher": {
+        "@id": "https://dh1software.com/#org"
       }
     },
     {
@@ -99,120 +102,347 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/landing.css">
-<link rel="stylesheet" href="/assets/demo-form.css">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/dia.css">
 </head>
 <body>
+<!-- Generado por herramientas/armar-paginas.cjs a partir de index.html. Editá el script, no este archivo. -->
+<div class="cielo" aria-hidden="true"></div>
+<div class="estrellas" aria-hidden="true"></div>
+<div class="astro" aria-hidden="true"></div>
+<div class="luna" aria-hidden="true"></div>
+<div class="ciudad" aria-hidden="true">
+  <svg viewBox="0 0 1600 300" preserveAspectRatio="xMidYMax slice" id="skyline">
+    <g fill="currentColor">
+      <!-- escuela con mástil -->
+      <rect data-v="5x3" x="40" y="170" width="220" height="130"/><polygon points="30,172 150,120 270,172"/>
+      <rect x="146" y="60" width="3" height="62"/><rect x="149" y="62" width="30" height="18" fill="#74ACDF" opacity=".55"/>
+      <!-- edificios -->
+      <rect data-v="4x9" x="300" y="70" width="90" height="230"/>
+      <rect data-v="3x6" x="398" y="130" width="70" height="170"/>
+      <!-- grúa -->
+      <rect x="520" y="40" width="8" height="260"/><rect x="470" y="40" width="200" height="7"/><rect x="660" y="47" width="2" height="70"/><rect x="650" y="117" width="22" height="14"/>
+      <circle class="grua-luz" cx="672" cy="40" r="4"/>
+      <rect data-v="5x5" x="560" y="160" width="130" height="140"/>
+      <!-- hospital -->
+      <rect data-v="7x7" x="730" y="100" width="210" height="200"/><rect x="820" y="62" width="30" height="40"/>
+      <rect x="831" y="70" width="8" height="24" fill="#ff5a4e" opacity=".75"/><rect x="823" y="78" width="24" height="8" fill="#ff5a4e" opacity=".75"/>
+      <!-- tanque de agua y torre -->
+      <rect x="975" y="120" width="60" height="40" rx="6"/><rect x="985" y="160" width="6" height="140"/><rect x="1020" y="160" width="6" height="140"/>
+      <rect data-v="3x11" x="1060" y="40" width="80" height="260"/>
+      <rect data-v="4x5" x="1150" y="150" width="110" height="150"/>
+      <!-- galpón -->
+      <path d="M1280 300 V190 Q1370 140 1460 190 V300 Z"/>
+      <rect data-v="3x7" x="1480" y="110" width="90" height="190"/>
+      <rect x="0" y="292" width="1600" height="8"/>
+    </g>
+    <g id="ventanas"></g>
+  </svg>
+</div>
+<div class="velo" aria-hidden="true"></div>
 
-<header class="l-nav">
-  <a href="/" class="l-brand" aria-label="DH1 Software — inicio"><img src="/favicon.svg" alt="" width="38" height="38"><span>DH<b>1</b> Software</span></a>
-  <nav class="l-nav-links" aria-label="Principal">
-    <a href="/#modulos">Módulos</a>
-    <a href="/#industrias">Industrias</a>
-    <a href="#demo" class="cta">Solicitar demo</a>
-  </nav>
+<header class="nav">
+  <a href="/" class="marca" aria-label="DH1 Software, inicio"><svg class="brand-svg-mark" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <defs>
+    <linearGradient id="nmB" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#2e6cd6"/><stop offset="100%" stop-color="#1e4fa3"/></linearGradient>
+    <linearGradient id="nmG" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f5b83a"/><stop offset="100%" stop-color="#d89215"/></linearGradient>
+  </defs>
+  <!-- Dense tangle: 6 ellipses at many angles (alternating blue/gold) -->
+  <g fill="none" stroke-width="3.5" stroke-linecap="round">
+    <ellipse cx="100" cy="100" rx="82" ry="30" stroke="url(#nmB)" transform="rotate(10 100 100)"/>
+    <ellipse cx="100" cy="100" rx="82" ry="30" stroke="url(#nmG)" transform="rotate(-20 100 100)"/>
+    <ellipse cx="100" cy="100" rx="82" ry="30" stroke="url(#nmB)" transform="rotate(55 100 100)" opacity="0.9"/>
+    <ellipse cx="100" cy="100" rx="82" ry="30" stroke="url(#nmG)" transform="rotate(-60 100 100)" opacity="0.9"/>
+    <ellipse cx="100" cy="100" rx="82" ry="30" stroke="url(#nmB)" transform="rotate(100 100 100)" opacity="0.75"/>
+    <ellipse cx="100" cy="100" rx="82" ry="30" stroke="url(#nmG)" transform="rotate(135 100 100)" opacity="0.75"/>
+  </g>
+  <!-- Scattered connection nodes like original -->
+  <g>
+    <circle cx="100" cy="18" r="3.5" fill="url(#nmG)"/>
+    <circle cx="100" cy="182" r="3.5" fill="url(#nmB)"/>
+    <circle cx="18" cy="100" r="3.5" fill="url(#nmB)"/>
+    <circle cx="182" cy="100" r="3.5" fill="url(#nmG)"/>
+    <circle cx="42" cy="42" r="2.8" fill="url(#nmG)"/>
+    <circle cx="158" cy="158" r="2.8" fill="url(#nmB)"/>
+    <circle cx="158" cy="42" r="2.8" fill="url(#nmB)"/>
+    <circle cx="42" cy="158" r="2.8" fill="url(#nmG)"/>
+  </g>
+  <!-- Solid backing so letters stand out clearly from the tangle (subtle, ink-colored) -->
+  <rect x="38" y="58" width="124" height="84" fill="#0a0e1a" opacity="0.55" rx="4"/>
+  <!-- BIG BOLD DH1 — the heart of the logo -->
+  <g font-family="'Bricolage Grotesque', 'Inter', sans-serif" font-weight="800" letter-spacing="-0.06em">
+    <text x="46" y="134" font-size="72" fill="url(#nmB)">D</text>
+    <text x="90" y="134" font-size="72" fill="url(#nmB)">H</text>
+    <text x="134" y="134" font-size="72" fill="url(#nmG)">1</text>
+  </g>
+  <!-- Growth arrow above the 1 -->
+  <path d="M 152 72 L 152 56 L 145 63 M 152 56 L 159 63" stroke="url(#nmG)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg><span>DH<b>1</b></span></a>
+  <ul id="menu">
+    <li><a href="/ordenes-de-trabajo-digitales/">Órdenes de trabajo</a></li>
+    <li><a href="/software-mantenimiento-preventivo/">Mantenimiento</a></li>
+    <li><a href="/certificados-de-obra/">Certificados</a></li>
+    <li><a href="/trabajo-sin-senal/">Campo sin señal</a></li>
+    <li><a href="/erp-constructoras/" aria-current="page">Constructoras</a></li>
+  </ul>
+  <a href="#demo" class="pedir">Pedir una demo</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+  </button>
 </header>
 
-<nav class="crumbs" aria-label="Ruta"><a href="/">Inicio</a> / <span aria-current="page">ERP para constructoras</span></nav>
+<aside class="riel" aria-label="Una obra de 90 días">
+  <div class="hora etq" id="hora" aria-live="off">Día 1</div>
+  <div class="dia">Una obra de 90 días</div>
+  <ol id="indice">
+    <li><a href="#inicio"><b>Día 1</b>Empieza</a></li>
+    <li><a href="#alta"><b>Día 1</b>Alta</a></li>
+    <li><a href="#presupuestos"><b>Día 3</b>Presupuestos</a></li>
+    <li><a href="#panol"><b>Día 10</b>Pañol</a></li>
+    <li><a href="#cuadrillas"><b>Día 30</b>Cuadrillas</a></li>
+    <li><a href="#plazo"><b>Día 54</b>Plazo</a></li>
+    <li><a href="#certificacion"><b>Día 90</b>Certificación</a></li>
+    <li><a href="#demo"><b>Día 91</b>Demo</a></li>
+    <li class="avance" aria-hidden="true"></li>
+  </ol>
+</aside>
 
 <main>
-<section class="l-hero">
-  <div class="l-wrap">
-    <span class="tag">— ERP para constructoras</span>
-    <h1>El ERP para constructoras que <em>sigue la obra</em>, no solo la planilla.</h1>
-    <p class="lead">DH1 reúne en una sola plataforma lo que hoy está repartido entre Excel, WhatsApp y el cuaderno del capataz: obras, presupuestos, compras, materiales y personal. Cada movimiento queda registrado y asociado a la obra que corresponde.</p>
-    <div class="btns">
-      <a href="#demo" class="btn-primary">Solicitar demo gratuita<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-      <a href="#funciones" class="btn-ghost">Ver funciones</a>
+  <section class="cap portada modulo" id="inicio" data-etq="Día 1">
+    <div class="texto">
+      <nav class="miga aparece" aria-label="Estás en"><a href="/">Inicio</a><span>/</span><span>ERP para constructoras</span></nav>
+      <div class="reloj-gigante aparece" aria-hidden="true">Día<span> </span>1</div>
+      <h1 class="aparece">Noventa días de obra <em>en un solo lugar.</em></h1>
+      <p class="bajada aparece">Una obra entra con su jefe, su inspector y su plazo. Después vienen los presupuestos, los materiales, las cuadrillas, las órdenes y los certificados. <strong>Esta es una obra de 90 días contada por DH1.</strong></p>
+      <div class="botones aparece">
+        <a href="#alta" class="btn prim">Empezar <span class="bajar">↓</span></a>
+        <a href="#demo" class="btn sec">Pedir una demo</a>
+      </div>
+      <p class="nota aparece">Bajá: el reloj de la izquierda ahora cuenta los días de obra.</p>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="l-sec paper">
-  <div class="l-wrap">
-    <span class="tag">— El problema</span>
-    <h2>Del caos operativo a una obra <em>trazable</em>.</h2>
-    <p class="intro">Las constructoras chicas y medianas suelen perder plata en los mismos lugares: materiales que salen del depósito sin destino claro, presupuestos que no se convierten en seguimiento real y avances que se reportan de memoria.</p>
-    <div class="split">
-      <div class="panel before"><h3>Sin DH1</h3><ul><li>Presupuestos en Excel que nadie vuelve a mirar cuando arranca la obra</li><li>Materiales que salen del depósito sin registro de a qué obra fueron</li><li>Avance de obra reportado por teléfono, sin evidencia</li><li>Documentación del personal vencida y dispersa</li></ul></div>
-      <div class="panel after"><h3>Con DH1</h3><ul><li>Presupuestos por rubro que se convierten en obras activas al aprobarse</li><li>Inventario con QR: cada ítem con historial, ubicación y movimientos</li><li>Avance, cronograma y estado de cada obra en tiempo real</li><li>Legajos digitales y asignación de personal por obra</li></ul></div>
+  <section class="cap" id="alta" data-etq="Día 1">
+    <div class="texto aparece">
+      <div class="marca-hora">Día 1 · Alta</div>
+      <h2>La obra entra <em>con nombre y apellido.</em></h2>
+      <p class="bajada">Comuna, jefe de sitio, inspector, plazo y documentos, cada cosa en su lugar. <strong>Si ya la tenés en una planilla, se importa:</strong> reimportar actualiza sin duplicar ni borrar lo que la planilla trae vacío.</p>
+      <ul class="libro">
+        <li>Jefe e inspector son usuarios, no nombres escritos.</li>
+        <li>Documentos de la obra en un depósito privado.</li>
+        <li>Cada empresa ve solo sus obras.</li>
+      </ul>
     </div>
-  </div>
-</section>
-
-<section class="l-sec" id="funciones">
-  <div class="l-wrap">
-    <span class="tag">— Funciones</span>
-    <h2>Todo lo que una constructora necesita, <em>conectado</em>.</h2>
-    <p class="intro">Los módulos comparten datos entre sí: un presupuesto aprobado se vuelve obra, la obra consume inventario, y el inventario se repone con proveedores.</p>
-    <div class="cards">
-      <div class="card"><div class="ic" aria-hidden="true">🏗️</div><h3>Gestión de obras</h3><p>Cronograma, porcentaje de avance, recursos asignados y estado de cada obra. Varias obras en paralelo sin perder el hilo.</p></div>
-      <div class="card gold"><div class="ic" aria-hidden="true">💰</div><h3>Presupuestos por rubro</h3><p>Armá presupuestos por rubro, versioná propuestas y convertí los aprobados directamente en obras activas.</p></div>
-      <div class="card"><div class="ic" aria-hidden="true">📦</div><h3>Inventario con QR</h3><p>Trazabilidad del depósito a la obra. Escaneás el código y ves el historial, la ubicación y cada movimiento del ítem.</p></div>
-      <div class="card gold"><div class="ic" aria-hidden="true">🤝</div><h3>Proveedores</h3><p>Base de proveedores con calificación, historial de compras y documentación fiscal, vinculada a inventario y presupuestos.</p></div>
-      <div class="card"><div class="ic" aria-hidden="true">👥</div><h3>Personal por obra</h3><p>Legajos digitales, control de presencias, documentación vigente y asignación de cada colaborador a sus obras.</p></div>
-      <div class="card gold"><div class="ic" aria-hidden="true">🔐</div><h3>Permisos por rol</h3><p>Administración, capataces, depósito y dirección ven y operan solo lo que les corresponde, con permisos configurables.</p></div>
+    <div class="objeto aparece">
+      <div class="hoja ficha gira-i">
+        <span class="cinta" aria-hidden="true"></span>
+        <div class="etq">Obra · alta</div>
+        <h3>Refacción sanitarios · Escuela N° 7</h3>
+        <ul class="filas"><li class="escalon"><span>Comuna</span><span>8A</span></li><li class="escalon"><span>Jefe de sitio</span><span>J. Ruiz</span></li><li class="escalon"><span>Inspección</span><span>L. Díaz</span></li><li class="escalon"><span>Inicio</span><span>1 de agosto</span></li><li class="escalon"><span>Plazo</span><span>90 días</span></li><li class="escalon"><span>Documentos</span><span>Pliego, planos, ADA</span></li></ul>
+        
+        <span class="marca-tinta tinta-azul escalon">EN OBRA</span>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="l-sec alt">
-  <div class="l-wrap">
-    <span class="tag">— Implementación</span>
-    <h2>De cero a operativo <em>en días, no en meses.</em></h2>
-    <p class="intro">Respetamos cómo ya trabaja tu empresa: sin frenar la operación y sin rehacer procesos desde cero.</p>
-    <div class="steps">
-      <div class="step"><h3>Diagnóstico</h3><p>Relevamos tus procesos y definimos qué módulos aportan valor primero.</p></div>
-      <div class="step"><h3>Configuración</h3><p>Parametrizamos roles, datos base y flujos según tu operación real.</p></div>
-      <div class="step"><h3>Capacitación</h3><p>Entrenamiento por rol, con material escrito y en video.</p></div>
-      <div class="step"><h3>Puesta en marcha</h3><p>Arranque asistido con soporte directo la primera quincena.</p></div>
+  <section class="cap" id="presupuestos" data-etq="Día 3">
+    <div class="texto aparece">
+      <div class="marca-hora">Día 3 · Presupuestos</div>
+      <h2>Presupuestos <em>con estado.</em></h2>
+      <p class="bajada">Las planillas de presupuesto viven en un repositorio con su estado y su obra. Los proveedores, en su propia lista. <strong>Nadie busca "la última versión" en un mail.</strong></p>
+      <ul class="libro">
+        <li>Presupuestos por obra, con estado.</li>
+        <li>Proveedores y requerimientos de compra.</li>
+        <li>Enlaces a los archivos que vencen solos.</li>
+      </ul>
     </div>
-  </div>
-</section>
-
-<section class="l-sec">
-  <div class="l-wrap">
-    <span class="tag">— Preguntas frecuentes</span>
-    <h2>Lo que suelen <em>preguntarnos</em>.</h2>
-    <div class="faq">
-      <details><summary>¿DH1 sirve para una constructora chica?</summary><p>Sí. Está pensado para empresas que operan varias obras a la vez con equipos reducidos. La implementación arranca por los módulos que más impacto tienen en tu operación y se suman los demás después.</p></details>
-      <details><summary>¿Se puede usar desde el celular en la obra?</summary><p>Sí. DH1 es web y funciona en celulares y tablets, así que capataces y encargados cargan avances, movimientos de materiales y órdenes de trabajo desde el lugar.</p></details>
-      <details><summary>¿Cuánto tarda la implementación?</summary><p>Días, no meses. El proceso tiene cuatro etapas: diagnóstico, configuración según tu operación, capacitación por rol y puesta en marcha asistida durante la primera quincena.</p></details>
-      <details><summary>¿Cuánto cuesta?</summary><p>Depende de los módulos y la cantidad de usuarios. Pedí una demo y armamos una propuesta para tu caso.</p></details>
+    <div class="objeto aparece">
+      <div class="hoja ficha gira-d">
+        <span class="cinta" aria-hidden="true"></span>
+        <div class="etq">Presupuestos · Escuela N° 7</div>
+        <h3>Refacción sanitarios</h3>
+        <ul class="filas"><li class="escalon"><span>Albañilería · v3</span><span>aprobado</span></li><li class="escalon"><span>Instalación sanitaria · v2</span><span>aprobado</span></li><li class="escalon"><span>Revestimientos · v1</span><span>en revisión</span></li><li class="escalon"><span>Adicional rejillas</span><span>pedido</span></li></ul>
+        <div class="pie-ficha">Proveedores: 6 · requerimientos abiertos: 2</div>
+        <span class="marca-tinta tinta-verde escalon">AL DÍA</span>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="l-sec alt">
-  <div class="l-wrap">
-    <div class="related">
-      <a href="/ordenes-de-trabajo-digitales/"><small>VER TAMBIÉN</small><strong>Órdenes de trabajo digitales</strong></a>
-      <a href="/software-mantenimiento-preventivo/"><small>VER TAMBIÉN</small><strong>Software de mantenimiento preventivo</strong></a>
+  <section class="cap" id="panol" data-etq="Día 10">
+    <div class="texto aparece">
+      <div class="marca-hora">Día 10 · Pañol</div>
+      <h2>Del depósito <em>a la obra.</em></h2>
+      <p class="bajada">Los materiales salen del pañol con su movimiento registrado. Cuando el stock baja del mínimo, <strong>aparece el requerimiento de compra.</strong> Las herramientas se prestan y se devuelven con nombre.</p>
+      <ul class="libro">
+        <li>Inventario con QR.</li>
+        <li>Préstamos de herramientas con devolución.</li>
+        <li>Requerimientos de compra con su seguimiento.</li>
+      </ul>
     </div>
-  </div>
-</section>
+    <div class="objeto aparece">
+      <div class="pantalla panol" id="panolObj">
+        <div class="etq" style="color:var(--texto-3)">Stock · depósito central</div>
+        <div class="mat"><div><p>Caño termofusión 1/2"</p><small>mín. 12 u</small><div class="barra"><i style="width:80%" data-fin="18%"></i><span class="min" style="left:30%"></span></div></div><div class="num" data-fin="7">32</div></div>
+        <div class="mat"><div><p>Sello mecánico 16 mm</p><small>mín. 4 u</small><div class="barra"><i style="width:60%" data-fin="45%"></i><span class="min" style="left:25%"></span></div></div><div class="num" data-fin="9">12</div></div>
+        <div class="mat"><div><p>Térmica bipolar 2x20 A</p><small>mín. 6 u</small><div class="barra"><i style="width:70%" data-fin="62%"></i><span class="min" style="left:30%"></span></div></div><div class="num" data-fin="15">17</div></div>
+        <div class="hoja pedido" id="pedido"><b>REQ-0042 · pedido de compra</b><p>Caño termofusión 1/2" · 24 u · creado solo · espera aprobación</p></div>
+      </div>
+    </div>
+  </section>
 
-<section class="l-cta" id="demo">
-  <h2>Mirá DH1 con <em>una obra como la tuya.</em></h2>
-  <p>Agendá una demo personalizada. Te mostramos DH1 funcionando con un caso similar al tuyo, sin compromiso.</p>
-  <form class="demo-form" data-subject="Solicitud de demo — ERP para constructoras" novalidate>     <div class="df-grid">       <label><span>Nombre *</span><input name="nombre" required autocomplete="name"></label>       <label><span>Empresa *</span><input name="empresa" required autocomplete="organization"></label>       <label><span>Email *</span><input type="email" name="email" required autocomplete="email"></label>       <label><span>Teléfono</span><input type="tel" name="telefono" autocomplete="tel"></label>       <label class="df-full"><span>Rubro</span><input name="rubro" placeholder="Construcción, mantenimiento, servicios…"></label>       <label class="df-full"><span>Comentarios</span><textarea name="comentarios" rows="4" placeholder="Contanos brevemente qué querés resolver"></textarea></label>     </div>     <input type="checkbox" name="botcheck" class="df-hp" tabindex="-1" autocomplete="off" aria-hidden="true">     <div class="df-actions">       <button type="submit" class="btn-primary">Solicitar demo<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></button>       <p class="df-status" role="status" aria-live="polite"></p>     </div>   </form>
-</section>
+  <section class="cap" id="cuadrillas" data-etq="Día 30">
+    <div class="texto aparece">
+      <div class="marca-hora">Día 30 · Cuadrillas</div>
+      <h2>La gente, <em>en la obra.</em></h2>
+      <p class="bajada">La cuadrilla ficha con el QR de la obra; las órdenes de trabajo llegan a sus teléfonos y se cierran con fotos y firma. <strong>Las horas quedan por orden y por persona.</strong></p>
+      <ul class="libro">
+        <li>Fichaje por QR o con la tablet de la cuadrilla.</li>
+        <li>Órdenes ligadas a la obra.</li>
+        <li>Funciona sin señal en el campo. <a href="/trabajo-sin-senal/">Ver cómo →</a></li>
+      </ul>
+    </div>
+    <div class="objeto aparece">
+      <div class="panel linea"><ol><li class="escalon ok"><code>07:02</code><b>Fichó la cuadrilla 3</b><span>4 personas · QR de la obra</span></li><li class="escalon ok"><code>07:40</code><b>OT-000203 · Demolición revestimiento</b><span>en curso</span></li><li class="escalon ok"><code>12:15</code><b>OT-000203 cerrada</b><span>6 fotos · firma del director</span></li><li class="escalon ya"><code>13:30</code><b>OT-000204 · Montantes</b><span>esperando material</span></li><li class="escalon ok"><code>16:00</code><b>Salida de la cuadrilla</b><span>8,9 h por persona</span></li></ol></div>
+    </div>
+  </section>
+
+  <section class="cap" id="plazo" data-etq="Día 54">
+    <div class="texto aparece">
+      <div class="marca-hora">Día 54 · Plazo</div>
+      <h2>Avisa antes <em>de que sea tarde.</em></h2>
+      <p class="bajada">Con los días transcurridos, el sistema calcula cuánto avance debería haber. <strong>Si el real queda atrás, la obra aparece como plazo en riesgo</strong> en el tablero de gerencia.</p>
+      <ul class="libro">
+        <li>Avance esperado contra avance real.</li>
+        <li>Obras en riesgo, emergencias y compras atrasadas en un tablero.</li>
+        <li>Alertas, no sorpresas.</li>
+      </ul>
+    </div>
+    <div class="objeto aparece">
+      <div class="panel medidor">
+        <div class="etq-panel">Escuela N° 7 · día 54 de 90</div>
+        <p>Avance esperado · 60 %</p><div class="pista"><i class="esperado" style="--v:60%"></i></div><p>Avance real · 38 %</p><div class="pista"><i class="real" style="--v:38%"></i></div>
+        <div class="eje"><span>0 %</span><span>50 %</span><span>100 %</span></div>
+        <p class="escalon" style="margin-top:14px"><b style="color:var(--ambar)">Plazo en riesgo:</b> 22 puntos atrás. Aparece en el tablero de gerencia.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cap" id="certificacion" data-etq="Día 90">
+    <div class="texto aparece">
+      <div class="marca-hora">Día 90 · Certificación</div>
+      <h2>Certificada <em>y en seguimiento.</em></h2>
+      <p class="bajada">Los certificados de avance salen desde la orden de compra, con firmas y sin pasarse del contrato. El tablero de cobro por ciclo muestra en qué está cada obra; <strong>"observado" siempre lleva motivo.</strong></p>
+      <ul class="libro">
+        <li>Certificados con cadena de firmas. <a href="/certificados-de-obra/">Ver certificados →</a></li>
+        <li>Cerrar el ciclo pasa lo pendiente al siguiente.</li>
+        <li>DH1 certifica y controla; no factura.</li>
+      </ul>
+    </div>
+    <div class="objeto aparece">
+      <div class="hoja ficha gira-d">
+        <span class="cinta" aria-hidden="true"></span>
+        <div class="etq">Cobro · ciclo de octubre</div>
+        <h3>Comuna 8A</h3>
+        <ul class="filas"><li class="escalon"><span>Escuela N° 7 · sanitarios</span><span>certificada 100 %</span></li><li class="escalon"><span>Jardín 904 · cubierta</span><span>presentada</span></li><li class="escalon"><span>Escuela N° 12 · gas</span><span>observada · falta plano</span></li><li class="escalon"><span>Escuela N° 3 · eléctrica</span><span>en curso → noviembre</span></li></ul>
+        <div class="pie-ficha">Hoja por comuna lista para imprimir</div>
+        <span class="marca-tinta tinta-verde escalon">CICLO CERRADO</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="preguntas" id="preguntas" aria-labelledby="tit-preguntas">
+    <div class="marca-hora aparece" style="font:13px var(--mono);letter-spacing:.1em;color:var(--ambar);margin-bottom:18px">Preguntas</div>
+    <h2 id="tit-preguntas" class="aparece">Lo que nos <em>preguntan.</em></h2>
+    <div class="lista">
+      <details class="hoja aparece" open><summary>¿DH1 sirve para una constructora chica?</summary><p>Sí. Está pensado para empresas que operan varias obras a la vez con equipos reducidos. La implementación arranca por los módulos que más impacto tienen en tu operación y se suman los demás después.</p></details>
+      <details class="hoja aparece"><summary>¿Se puede usar desde el celular en la obra?</summary><p>Sí. DH1 es web y funciona en celulares y tablets, así que capataces y encargados cargan avances, movimientos de materiales y órdenes de trabajo desde el lugar.</p></details>
+      <details class="hoja aparece"><summary>¿Cuánto tarda la implementación?</summary><p>Días, no meses. El proceso tiene cuatro etapas: diagnóstico, configuración según tu operación, capacitación por rol y puesta en marcha asistida durante la primera quincena.</p></details>
+      <details class="hoja aparece"><summary>¿Cuánto cuesta?</summary><p>Depende de los módulos y la cantidad de usuarios. Pedí una demo y armamos una propuesta para tu caso.</p></details>
+    </div>
+  </section>
+
+  <section class="cap final" id="demo" data-etq="Día 91">
+    <div class="texto aparece">
+      <div class="marca-hora">Día 91 · Demo</div>
+      <h2>Mostranos <em>tu caso.</em></h2>
+      <p class="bajada">Te mostramos DH1 con algo parecido a lo tuyo: tus lugares, tus equipos, tus obras. <strong>Sin compromiso y en una llamada.</strong></p>
+      <ul class="libro">
+        <li>Web y teléfono. Funciona sin señal en el campo.</li>
+        <li>Cada empresa ve solo lo suyo: lo garantiza la base de datos.</li>
+        <li><a href="/">Ver un día de obra completo →</a></li>
+      </ul>
+      <div class="otras"><a href="/ordenes-de-trabajo-digitales/">Órdenes de trabajo →</a><a href="/software-mantenimiento-preventivo/">Mantenimiento →</a><a href="/certificados-de-obra/">Certificados →</a><a href="/trabajo-sin-senal/">Campo sin señal →</a></div>
+    </div>
+    <div class="objeto aparece">
+      <div class="hoja form">
+        <span class="cinta" aria-hidden="true"></span>
+        <h3>Pedir una demo</h3>
+        <p>Te escribimos en el día.</p>
+        <form class="demo-form" data-subject="Solicitud de demo — ERP para constructoras — DH1 Software" novalidate>     <div class="df-grid">       <label><span>Nombre *</span><input name="nombre" required autocomplete="name"></label>       <label><span>Empresa *</span><input name="empresa" required autocomplete="organization"></label>       <label><span>Email *</span><input type="email" name="email" required autocomplete="email"></label>       <label><span>Teléfono</span><input type="tel" name="telefono" autocomplete="tel"></label>       <label class="df-full"><span>Rubro</span><input name="rubro" placeholder="Construcción, mantenimiento, servicios…"></label>       <label class="df-full"><span>Comentarios</span><textarea name="comentarios" rows="4" placeholder="Contanos brevemente qué querés resolver"></textarea></label>     </div>     <input type="checkbox" name="botcheck" class="df-hp" tabindex="-1" autocomplete="off" aria-hidden="true">     <div class="df-actions">       <button type="submit" class="btn-primary">Solicitar demo<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></button>       <p class="df-status" role="status" aria-live="polite"></p>     </div>   </form>
+      </div>
+    </div>
+  </section>
 </main>
 
-<footer class="l-foot">
-  <div class="row">
-    <span>© 2026 DH1 Software · Buenos Aires, Argentina</span>
-    <nav aria-label="Soluciones">
-      <a href="/">Inicio</a>
-      <a href="/erp-constructoras/">ERP para constructoras</a>
-      <a href="/software-mantenimiento-preventivo/">Mantenimiento preventivo</a>
-      <a href="/ordenes-de-trabajo-digitales/">Órdenes de trabajo</a>
-      <a href="#demo">Solicitar demo</a>
-    </nav>
+<footer class="pie">
+  <div class="pie-grid">
+    <div><svg class="brand-svg-footer" style="width:230px;height:auto" viewBox="0 0 460 140" xmlns="http://www.w3.org/2000/svg" aria-label="DH1 Software">
+  <defs>
+    <linearGradient id="flB" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#2e6cd6"/><stop offset="100%" stop-color="#1e4fa3"/></linearGradient>
+    <linearGradient id="flG" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f5b83a"/><stop offset="100%" stop-color="#d89215"/></linearGradient>
+    <linearGradient id="flW" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ffffff"/><stop offset="100%" stop-color="#c9d6ef"/></linearGradient>
+  </defs>
+  <!-- Mark -->
+  <g transform="translate(5, 10) scale(0.6)">
+    <g fill="none" stroke-width="3.5" stroke-linecap="round">
+      <ellipse cx="100" cy="100" rx="82" ry="30" stroke="url(#flB)" transform="rotate(10 100 100)"/>
+      <ellipse cx="100" cy="100" rx="82" ry="30" stroke="url(#flG)" transform="rotate(-20 100 100)"/>
+      <ellipse cx="100" cy="100" rx="82" ry="30" stroke="url(#flB)" transform="rotate(55 100 100)" opacity="0.9"/>
+      <ellipse cx="100" cy="100" rx="82" ry="30" stroke="url(#flG)" transform="rotate(-60 100 100)" opacity="0.9"/>
+      <ellipse cx="100" cy="100" rx="82" ry="30" stroke="url(#flB)" transform="rotate(100 100 100)" opacity="0.75"/>
+      <ellipse cx="100" cy="100" rx="82" ry="30" stroke="url(#flG)" transform="rotate(135 100 100)" opacity="0.75"/>
+    </g>
+    <g>
+      <circle cx="100" cy="18" r="3.5" fill="url(#flG)"/>
+      <circle cx="100" cy="182" r="3.5" fill="url(#flB)"/>
+      <circle cx="18" cy="100" r="3.5" fill="url(#flB)"/>
+      <circle cx="182" cy="100" r="3.5" fill="url(#flG)"/>
+      <circle cx="42" cy="42" r="2.8" fill="url(#flG)"/>
+      <circle cx="158" cy="158" r="2.8" fill="url(#flB)"/>
+      <circle cx="158" cy="42" r="2.8" fill="url(#flB)"/>
+      <circle cx="42" cy="158" r="2.8" fill="url(#flG)"/>
+    </g>
+    <rect x="38" y="58" width="124" height="84" fill="#141a2e" opacity="0.7" rx="4"/>
+    <g font-family="'Bricolage Grotesque', 'Inter', sans-serif" font-weight="800" letter-spacing="-0.06em">
+      <text x="46" y="134" font-size="72" fill="url(#flB)">D</text>
+      <text x="90" y="134" font-size="72" fill="url(#flB)">H</text>
+      <text x="134" y="134" font-size="72" fill="url(#flG)">1</text>
+    </g>
+    <path d="M 152 72 L 152 56 L 145 63 M 152 56 L 159 63" stroke="url(#flG)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- Wordmark -->
+  <g font-family="'Bricolage Grotesque', 'Inter', sans-serif" transform="translate(135, 0)">
+    <text x="0" y="78" font-size="66" font-weight="800" letter-spacing="-0.04em">
+      <tspan fill="url(#flB)">DH</tspan><tspan fill="url(#flG)">1</tspan>
+    </text>
+    <text x="3" y="108" font-size="16" font-weight="500" letter-spacing="0.4em" fill="#8896b4">SOFTWARE</text>
+  </g>
+</svg><p>ERP para empresas de construcción y mantenimiento: obras, órdenes de trabajo, mantenimiento preventivo, pañol y certificación, en el campo y en la oficina.</p></div>
+    <div><h5>El día</h5><ul><li><a href="/#fichaje">Fichaje</a></li><li><a href="/#reparto">Órdenes</a></li><li><a href="/#emergencia">Emergencias</a></li><li><a href="/#sotano">Sin señal</a></li><li><a href="/#el-dia">El día entero</a></li></ul></div>
+    <div><h5>Soluciones</h5><ul><li><a href="/ordenes-de-trabajo-digitales/">Órdenes de trabajo digitales</a></li><li><a href="/software-mantenimiento-preventivo/">Mantenimiento preventivo</a></li><li><a href="/certificados-de-obra/">Certificados de obra</a></li><li><a href="/trabajo-sin-senal/">Trabajo de campo sin señal</a></li><li><a href="/erp-constructoras/">ERP para constructoras</a></li></ul></div>
+    <div><h5>Contacto</h5><ul><li><a href="#demo">Pedir una demo</a></li><li><span style="color:var(--texto-3);font-size:14px">Buenos Aires, Argentina</span></li></ul></div>
+  </div>
+  <div class="abajo">
+    <span>© 2026 DH1 Software</span>
+    <span class="presencia">Presencia en
+      <svg viewBox="0 0 60 40" role="img" aria-label="Argentina"><rect width="60" height="13.333" fill="#74ACDF"/><rect width="60" height="13.333" y="13.333" fill="#FFFFFF"/><rect width="60" height="13.333" y="26.666" fill="#74ACDF"/><circle cx="30" cy="20" r="3.2" fill="#F6B40E"/></svg>
+      <svg viewBox="0 0 60 30" role="img" aria-label="Canadá"><rect width="15" height="30" fill="#D52B1E"/><rect width="30" height="30" x="15" fill="#FFFFFF"/><rect width="15" height="30" x="45" fill="#D52B1E"/><path d="M30 8 L31.5 11.5 L35 10 L33 13.5 L36 15 L32 16 L32.8 18.5 L30 17 L27.2 18.5 L28 16 L24 15 L27 13.5 L25 10 L28.5 11.5 Z" fill="#D52B1E"/></svg>
+    </span>
+    <span>v2.4</span>
   </div>
 </footer>
 
 <script src="/assets/demo-form.js" defer></script>
+<script src="/assets/dia.js" defer></script>
 </body>
 </html>

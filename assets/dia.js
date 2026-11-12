@@ -42,7 +42,7 @@
   }
 
   // ------------------------------------------------------------ reloj del riel
-  const caps = $$('main .cap[data-hora]');
+  const caps = $$('main .cap[data-hora], main .cap[data-etq]');
   const items = $$('#indice li:not(.avance)');
   const avance = $('#indice .avance');
   const hora = $('#hora');
@@ -52,15 +52,24 @@
     let i = 0;
     while (i < caps.length - 1 && caps[i + 1].offsetTop <= medio) i++;
     const a = caps[i], b = caps[i + 1];
-    const ta = aMin(a.dataset.hora);
-    let min = ta;
-    if (b) {
-      // la hora avanza desde que el capítulo llega arriba de la pantalla hasta que llega el siguiente
-      const frac = Math.max(0, Math.min(1, (window.scrollY - a.offsetTop) / (b.offsetTop - a.offsetTop)));
-      min = ta + (aMin(b.dataset.hora) - ta) * frac;
+    let min;
+    if (a.dataset.etq !== undefined) {
+      // Páginas de módulo: el reloj muestra la escala propia ("Día 12", "Marzo") y el cielo recorre un día
+      // según cuánto de la página se leyó.
+      const total = document.documentElement.scrollHeight - window.innerHeight;
+      min = 358 + (1290 - 358) * Math.max(0, Math.min(1, window.scrollY / Math.max(1, total)));
+      if (hora && hora.dataset.ultima !== a.dataset.etq) { hora.textContent = a.dataset.etq; hora.dataset.ultima = a.dataset.etq; }
+    } else {
+      const ta = aMin(a.dataset.hora);
+      min = ta;
+      if (b) {
+        // la hora avanza desde que el capítulo llega arriba de la pantalla hasta que llega el siguiente
+        const frac = Math.max(0, Math.min(1, (window.scrollY - a.offsetTop) / (b.offsetTop - a.offsetTop)));
+        min = ta + (aMin(b.dataset.hora) - ta) * frac;
+      }
+      const [hh, mm] = aHora(min);
+      if (hora) hora.innerHTML = `${hh}<i>:</i>${mm}`;
     }
-    const [hh, mm] = aHora(min);
-    if (hora) hora.innerHTML = `${hh}<i>:</i>${mm}`;
     pintarCielo(min);
     if (i !== ultimo) {
       ultimo = i;

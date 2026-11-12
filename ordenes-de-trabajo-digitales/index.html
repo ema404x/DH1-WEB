@@ -8,6 +8,7 @@
 <link rel="canonical" href="https://dh1software.com/ordenes-de-trabajo-digitales/">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#0a0e1a">
+<meta name="color-scheme" content="dark">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -21,6 +22,8 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Órdenes de trabajo digitales con firma y GPS | DH1 Software">
+<meta name="twitter:description" content="Generá, asigná y cerrá órdenes de trabajo desde el celular, con firma digital, geolocalización GPS del cierre y fotos de evidencia. Todo vinculado a la obra o al equipo correspondiente.">
 <meta name="twitter:image" content="https://dh1software.com/og-image.png">
 <script type="application/ld+json">
 {
@@ -28,16 +31,16 @@
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://dh1software.com/ordenes-de-trabajo-digitales/",
+      "@id": "https://dh1software.com/ordenes-de-trabajo-digitales/#pagina",
       "url": "https://dh1software.com/ordenes-de-trabajo-digitales/",
       "name": "Órdenes de trabajo digitales con firma y GPS | DH1 Software",
       "description": "Generá, asigná y cerrá órdenes de trabajo desde el celular, con firma digital, geolocalización GPS del cierre y fotos de evidencia. Todo vinculado a la obra o al equipo correspondiente.",
       "inLanguage": "es-AR",
       "isPartOf": {
-        "@id": "https://dh1software.com/#website"
+        "@id": "https://dh1software.com/#web"
       },
-      "about": {
-        "@id": "https://dh1software.com/#software"
+      "publisher": {
+        "@id": "https://dh1software.com/#org"
       }
     },
     {
@@ -91,6 +94,14 @@
             "@type": "Answer",
             "text": "Sí. Cada OT queda vinculada a su obra o equipo, así que ves todas las intervenciones anteriores en un solo lugar."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué pasa si en el lugar no hay señal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El operario sigue trabajando: lo que hace queda guardado en el teléfono y se envía cuando vuelve la señal, en orden y sin duplicar."
+          }
         }
       ]
     }
@@ -99,120 +110,337 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/landing.css">
-<link rel="stylesheet" href="/assets/demo-form.css">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/dia.css">
 </head>
 <body>
+<!-- Generado por herramientas/armar-paginas.cjs a partir de index.html. Editá el script, no este archivo. -->
+<div class="cielo" aria-hidden="true"></div>
+<div class="estrellas" aria-hidden="true"></div>
+<div class="astro" aria-hidden="true"></div>
+<div class="luna" aria-hidden="true"></div>
+<div class="ciudad" aria-hidden="true">
+  <svg viewBox="0 0 1600 300" preserveAspectRatio="xMidYMax slice" id="skyline">
+    <g fill="currentColor">
+      <!-- escuela con mástil -->
+      <rect data-v="5x3" x="40" y="170" width="220" height="130"/><polygon points="30,172 150,120 270,172"/>
+      <rect x="146" y="60" width="3" height="62"/><rect x="149" y="62" width="30" height="18" fill="#74ACDF" opacity=".55"/>
+      <!-- edificios -->
+      <rect data-v="4x9" x="300" y="70" width="90" height="230"/>
+      <rect data-v="3x6" x="398" y="130" width="70" height="170"/>
+      <!-- grúa -->
+      <rect x="520" y="40" width="8" height="260"/><rect x="470" y="40" width="200" height="7"/><rect x="660" y="47" width="2" height="70"/><rect x="650" y="117" width="22" height="14"/>
+      <circle class="grua-luz" cx="672" cy="40" r="4"/>
+      <rect data-v="5x5" x="560" y="160" width="130" height="140"/>
+      <!-- hospital -->
+      <rect data-v="7x7" x="730" y="100" width="210" height="200"/><rect x="820" y="62" width="30" height="40"/>
+      <rect x="831" y="70" width="8" height="24" fill="#ff5a4e" opacity=".75"/><rect x="823" y="78" width="24" height="8" fill="#ff5a4e" opacity=".75"/>
+      <!-- tanque de agua y torre -->
+      <rect x="975" y="120" width="60" height="40" rx="6"/><rect x="985" y="160" width="6" height="140"/><rect x="1020" y="160" width="6" height="140"/>
+      <rect data-v="3x11" x="1060" y="40" width="80" height="260"/>
+      <rect data-v="4x5" x="1150" y="150" width="110" height="150"/>
+      <!-- galpón -->
+      <path d="M1280 300 V190 Q1370 140 1460 190 V300 Z"/>
+      <rect data-v="3x7" x="1480" y="110" width="90" height="190"/>
+      <rect x="0" y="292" width="1600" height="8"/>
+    </g>
+    <g id="ventanas"></g>
+  </svg>
+</div>
+<div class="velo" aria-hidden="true"></div>
 
-<header class="l-nav">
-  <a href="/" class="l-brand" aria-label="DH1 Software — inicio"><img src="/favicon.svg" alt="" width="38" height="38"><span>DH<b>1</b> Software</span></a>
-  <nav class="l-nav-links" aria-label="Principal">
-    <a href="/#modulos">Módulos</a>
-    <a href="/#industrias">Industrias</a>
-    <a href="#demo" class="cta">Solicitar demo</a>
-  </nav>
+<header class="nav">
+  <a href="/" class="marca" aria-label="DH1 Software, inicio"><svg class="brand-svg-mark" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <defs>
+    <linearGradient id="nmB" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#2e6cd6"/><stop offset="100%" stop-color="#1e4fa3"/></linearGradient>
+    <linearGradient id="nmG" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f5b83a"/><stop offset="100%" stop-color="#d89215"/></linearGradient>
+  </defs>
+  <!-- Dense tangle: 6 ellipses at many angles (alternating blue/gold) -->
+  <g fill="none" stroke-width="3.5" stroke-linecap="round">
+    <ellipse cx="100" cy="100" rx="82" ry="30" stroke="url(#nmB)" transform="rotate(10 100 100)"/>
+    <ellipse cx="100" cy="100" rx="82" ry="30" stroke="url(#nmG)" transform="rotate(-20 100 100)"/>
+    <ellipse cx="100" cy="100" rx="82" ry="30" stroke="url(#nmB)" transform="rotate(55 100 100)" opacity="0.9"/>
+    <ellipse cx="100" cy="100" rx="82" ry="30" stroke="url(#nmG)" transform="rotate(-60 100 100)" opacity="0.9"/>
+    <ellipse cx="100" cy="100" rx="82" ry="30" stroke="url(#nmB)" transform="rotate(100 100 100)" opacity="0.75"/>
+    <ellipse cx="100" cy="100" rx="82" ry="30" stroke="url(#nmG)" transform="rotate(135 100 100)" opacity="0.75"/>
+  </g>
+  <!-- Scattered connection nodes like original -->
+  <g>
+    <circle cx="100" cy="18" r="3.5" fill="url(#nmG)"/>
+    <circle cx="100" cy="182" r="3.5" fill="url(#nmB)"/>
+    <circle cx="18" cy="100" r="3.5" fill="url(#nmB)"/>
+    <circle cx="182" cy="100" r="3.5" fill="url(#nmG)"/>
+    <circle cx="42" cy="42" r="2.8" fill="url(#nmG)"/>
+    <circle cx="158" cy="158" r="2.8" fill="url(#nmB)"/>
+    <circle cx="158" cy="42" r="2.8" fill="url(#nmB)"/>
+    <circle cx="42" cy="158" r="2.8" fill="url(#nmG)"/>
+  </g>
+  <!-- Solid backing so letters stand out clearly from the tangle (subtle, ink-colored) -->
+  <rect x="38" y="58" width="124" height="84" fill="#0a0e1a" opacity="0.55" rx="4"/>
+  <!-- BIG BOLD DH1 — the heart of the logo -->
+  <g font-family="'Bricolage Grotesque', 'Inter', sans-serif" font-weight="800" letter-spacing="-0.06em">
+    <text x="46" y="134" font-size="72" fill="url(#nmB)">D</text>
+    <text x="90" y="134" font-size="72" fill="url(#nmB)">H</text>
+    <text x="134" y="134" font-size="72" fill="url(#nmG)">1</text>
+  </g>
+  <!-- Growth arrow above the 1 -->
+  <path d="M 152 72 L 152 56 L 145 63 M 152 56 L 159 63" stroke="url(#nmG)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg><span>DH<b>1</b></span></a>
+  <ul id="menu">
+    <li><a href="/ordenes-de-trabajo-digitales/" aria-current="page">Órdenes de trabajo</a></li>
+    <li><a href="/software-mantenimiento-preventivo/">Mantenimiento</a></li>
+    <li><a href="/certificados-de-obra/">Certificados</a></li>
+    <li><a href="/trabajo-sin-senal/">Campo sin señal</a></li>
+    <li><a href="/erp-constructoras/">Constructoras</a></li>
+  </ul>
+  <a href="#demo" class="pedir">Pedir una demo</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+  </button>
 </header>
 
-<nav class="crumbs" aria-label="Ruta"><a href="/">Inicio</a> / <span aria-current="page">Órdenes de trabajo digitales</span></nav>
+<aside class="riel" aria-label="La vida de una orden">
+  <div class="hora etq" id="hora" aria-live="off">Min 0</div>
+  <div class="dia">La vida de una orden</div>
+  <ol id="indice">
+    <li><a href="#inicio"><b>Min 0</b>Empieza</a></li>
+    <li><a href="#nace"><b>Min 0</b>Nace</a></li>
+    <li><a href="#asignada"><b>Min 4</b>Asignada</a></li>
+    <li><a href="#en-curso"><b>Hora 1</b>En curso</a></li>
+    <li><a href="#cierre"><b>Hora 3</b>Cierre</a></li>
+    <li><a href="#validada"><b>Día 2</b>Validada</a></li>
+    <li><a href="#demo"><b>Ahora</b>Demo</a></li>
+    <li class="avance" aria-hidden="true"></li>
+  </ol>
+</aside>
 
 <main>
-<section class="l-hero">
-  <div class="l-wrap">
-    <span class="tag">— Órdenes de trabajo</span>
-    <h1>Órdenes de trabajo digitales, <em>con firma y GPS</em>.</h1>
-    <p class="lead">Reemplazá la OT en papel por una orden que se crea, se asigna y se cierra desde el celular. Cada cierre queda con firma digital, ubicación GPS y fotos de evidencia, vinculado a la obra o al equipo.</p>
-    <div class="btns">
-      <a href="#demo" class="btn-primary">Solicitar demo gratuita<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-      <a href="#funciones" class="btn-ghost">Ver funciones</a>
+  <section class="cap portada modulo" id="inicio" data-etq="Min 0">
+    <div class="texto">
+      <nav class="miga aparece" aria-label="Estás en"><a href="/">Inicio</a><span>/</span><span>Órdenes de trabajo digitales</span></nav>
+      <div class="reloj-gigante aparece" aria-hidden="true">Min<span> </span>0</div>
+      <h1 class="aparece">Una orden nace, viaja <em>y vuelve firmada.</em></h1>
+      <p class="bajada aparece">De una emergencia, de una inspección o de un mantenimiento que vence. La toma una cuadrilla, la resuelve en el lugar y la cierra con fotos y firma. <strong>Esta es la vida de una orden en DH1, minuto a minuto.</strong></p>
+      <div class="botones aparece">
+        <a href="#nace" class="btn prim">Empezar <span class="bajar">↓</span></a>
+        <a href="#demo" class="btn sec">Pedir una demo</a>
+      </div>
+      <p class="nota aparece">Bajá: el reloj de la izquierda ahora cuenta la vida de una orden.</p>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="l-sec paper">
-  <div class="l-wrap">
-    <span class="tag">— El problema</span>
-    <h2>Una OT que <em>prueba</em> que el trabajo se hizo.</h2>
-    <p class="intro">La orden en papel se pierde, se completa tarde o llega ilegible. Y cuando hay un reclamo, no hay forma de demostrar quién hizo el trabajo, cuándo ni dónde.</p>
-    <div class="split">
-      <div class="panel before"><h3>Sin DH1</h3><ul><li>Órdenes en papel que se pierden o se cargan días después</li><li>Sin constancia de que el técnico estuvo en el lugar</li><li>Fotos del trabajo perdidas en el WhatsApp de alguien</li><li>Imposible saber qué OTs están abiertas en este momento</li></ul></div>
-      <div class="panel after"><h3>Con DH1</h3><ul><li>La OT se crea y se asigna al técnico al instante</li><li>Cierre con geolocalización GPS del lugar</li><li>Firma digital del responsable y fotos de evidencia adjuntas</li><li>Estado de todas las órdenes en tiempo real, por obra o equipo</li></ul></div>
+  <section class="cap" id="nace" data-etq="Min 0">
+    <div class="texto aparece">
+      <div class="marca-hora">Min 0 · Nace</div>
+      <h2>Una orden <em>no aparece sola.</em></h2>
+      <p class="bajada">Alguien reporta una emergencia desde el QR del lugar, una inspección encuentra un problema, vence una rutina o la oficina la carga a mano. <strong>Cada una entra con su lugar, su equipo y su prioridad.</strong></p>
+      <ul class="libro">
+        <li>La emergencia y su orden urgente se crean juntas: no queda una sin la otra.</li>
+        <li>El preventivo genera órdenes solas. Generar dos veces no duplica.</li>
+        <li>El informe de inspección propone las órdenes; una persona las confirma.</li>
+      </ul>
     </div>
-  </div>
-</section>
-
-<section class="l-sec" id="funciones">
-  <div class="l-wrap">
-    <span class="tag">— Funciones</span>
-    <h2>De la solicitud al cierre, <em>sin papel</em>.</h2>
-    <p class="intro">La orden de trabajo es el centro de la operación en DH1: conecta obras, equipos, inventario y personal.</p>
-    <div class="cards">
-      <div class="card"><div class="ic" aria-hidden="true">📋</div><h3>Creación y asignación</h3><p>Generá la orden desde cualquier dispositivo y asignala al técnico o cuadrilla responsable.</p></div>
-      <div class="card gold"><div class="ic" aria-hidden="true">✍️</div><h3>Firma digital</h3><p>El cierre se firma en pantalla, con la constancia guardada junto a la orden.</p></div>
-      <div class="card"><div class="ic" aria-hidden="true">📍</div><h3>Geolocalización del cierre</h3><p>La ubicación GPS del cierre queda registrada para saber dónde se completó el trabajo.</p></div>
-      <div class="card gold"><div class="ic" aria-hidden="true">📸</div><h3>Evidencia fotográfica</h3><p>Fotos del antes y el después adjuntas a la orden, sin depender de chats ni galerías personales.</p></div>
-      <div class="card"><div class="ic" aria-hidden="true">🔗</div><h3>Vinculada a la operación</h3><p>Cada OT se asocia a su obra o equipo, y alimenta el historial y los reportes.</p></div>
-      <div class="card gold"><div class="ic" aria-hidden="true">📶</div><h3>Lista para terreno</h3><p>Pensada para usarse en campo, incluso donde la conexión no es estable.</p></div>
+    <div class="objeto aparece">
+      <div class="pila-avisos">
+        <div class="aviso-tel escalon"><span class="app"><svg viewBox="0 0 30 30" aria-hidden="true"><text x="3" y="21" font-family="Bricolage Grotesque, Inter, sans-serif" font-weight="800" font-size="15" fill="#2e6cd6">DH</text><text x="22" y="21" font-family="Bricolage Grotesque, Inter, sans-serif" font-weight="800" font-size="15" fill="#f5b83a">1</text></svg></span><div><small><span>QR · Escuela N° 12</span><span>09:41</span></small><b>Emergencia: pérdida de gas</b><p>Reportada por el responsable del lugar. Orden urgente creada.</p></div></div>
+        <div class="aviso-tel escalon"><span class="app"><svg viewBox="0 0 30 30" aria-hidden="true"><text x="3" y="21" font-family="Bricolage Grotesque, Inter, sans-serif" font-weight="800" font-size="15" fill="#2e6cd6">DH</text><text x="22" y="21" font-family="Bricolage Grotesque, Inter, sans-serif" font-weight="800" font-size="15" fill="#f5b83a">1</text></svg></span><div><small><span>Preventivo</span><span>06:00</span></small><b>Vence: caldera Escuela 21</b><p>La rutina mensual generó su orden. Una sola por lugar.</p></div></div>
+        <div class="aviso-tel escalon"><span class="app"><svg viewBox="0 0 30 30" aria-hidden="true"><text x="3" y="21" font-family="Bricolage Grotesque, Inter, sans-serif" font-weight="800" font-size="15" fill="#2e6cd6">DH</text><text x="22" y="21" font-family="Bricolage Grotesque, Inter, sans-serif" font-weight="800" font-size="15" fill="#f5b83a">1</text></svg></span><div><small><span>Inspección</span><span>ayer</span></small><b>Tablero sin tapa en aula 3</b><p>El informe propuso una orden. La confirmó la coordinación.</p></div></div>
+        <div class="aviso-tel escalon"><span class="app"><svg viewBox="0 0 30 30" aria-hidden="true"><text x="3" y="21" font-family="Bricolage Grotesque, Inter, sans-serif" font-weight="800" font-size="15" fill="#2e6cd6">DH</text><text x="22" y="21" font-family="Bricolage Grotesque, Inter, sans-serif" font-weight="800" font-size="15" fill="#f5b83a">1</text></svg></span><div><small><span>Oficina</span><span>08:15</span></small><b>Cambio de luminarias</b><p>Cargada a mano, con el equipo y la foto del pedido.</p></div></div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="l-sec alt">
-  <div class="l-wrap">
-    <span class="tag">— Implementación</span>
-    <h2>De cero a operativo <em>en días, no en meses.</em></h2>
-    <p class="intro">Respetamos cómo ya trabaja tu empresa: sin frenar la operación y sin rehacer procesos desde cero.</p>
-    <div class="steps">
-      <div class="step"><h3>Diagnóstico</h3><p>Relevamos tus procesos y definimos qué módulos aportan valor primero.</p></div>
-      <div class="step"><h3>Configuración</h3><p>Parametrizamos roles, datos base y flujos según tu operación real.</p></div>
-      <div class="step"><h3>Capacitación</h3><p>Entrenamiento por rol, con material escrito y en video.</p></div>
-      <div class="step"><h3>Puesta en marcha</h3><p>Arranque asistido con soporte directo la primera quincena.</p></div>
+  <section class="cap" id="asignada" data-etq="Min 4">
+    <div class="texto aparece">
+      <div class="marca-hora">Min 4 · Asignada</div>
+      <h2>Cuatro minutos después <em>ya tiene dueño.</em></h2>
+      <p class="bajada">Se asigna a una persona o a una cuadrilla. Le llega al teléfono y aparece en el lugar: <strong>quien escanea el QR del lugar ve las órdenes que tiene ahí.</strong></p>
+      <ul class="libro">
+        <li>Cada operario ve solo lo suyo. Cada empresa, solo lo suyo.</li>
+        <li>La prioridad ordena la lista del teléfono.</li>
+        <li>Si es urgente, gerencia y el jefe de sitio se enteran al instante.</li>
+      </ul>
     </div>
-  </div>
-</section>
-
-<section class="l-sec">
-  <div class="l-wrap">
-    <span class="tag">— Preguntas frecuentes</span>
-    <h2>Lo que suelen <em>preguntarnos</em>.</h2>
-    <div class="faq">
-      <details><summary>¿Qué es una orden de trabajo digital?</summary><p>Es la versión digital de la OT en papel: un registro de qué hay que hacer, quién lo hace, dónde y cuándo, que se completa desde el celular y queda guardado con firma, fotos y ubicación.</p></details>
-      <details><summary>¿La firma digital tiene validez?</summary><p>La firma en pantalla funciona como constancia de conformidad del trabajo realizado dentro de tu operación. Para usos con requisitos legales específicos, consultá con tu asesor.</p></details>
-      <details><summary>¿Hace falta instalar algo?</summary><p>No. Las órdenes se abren desde el navegador del celular o la tablet.</p></details>
-      <details><summary>¿Puedo ver el historial de órdenes de un equipo?</summary><p>Sí. Cada OT queda vinculada a su obra o equipo, así que ves todas las intervenciones anteriores en un solo lugar.</p></details>
+    <div class="objeto aparece">
+      <div class="hoja ficha gira-i">
+        <span class="cinta" aria-hidden="true"></span>
+        <div class="etq">Orden de trabajo</div>
+        <h3>OT-000175 · Bomba cisterna sin presión</h3>
+        <ul class="filas"><li class="escalon"><span>Lugar</span><span>Hospital Sur</span></li><li class="escalon"><span>Equipo</span><span>Bomba cisterna 2</span></li><li class="escalon"><span>Prioridad</span><span>Alta</span></li><li class="escalon"><span>Asignada a</span><span>Cuadrilla 3 · J. Ruiz</span></li><li class="escalon"><span>Creada</span><span>13:12</span></li><li class="escalon"><span>Asignada</span><span>13:16</span></li></ul>
+        
+        <span class="marca-tinta tinta-azul escalon">ASIGNADA</span>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="l-sec alt">
-  <div class="l-wrap">
-    <div class="related">
-      <a href="/software-mantenimiento-preventivo/"><small>VER TAMBIÉN</small><strong>Software de mantenimiento preventivo</strong></a>
-      <a href="/erp-constructoras/"><small>VER TAMBIÉN</small><strong>ERP para constructoras</strong></a>
+  <section class="cap" id="en-curso" data-etq="Hora 1">
+    <div class="texto aparece">
+      <div class="marca-hora">Hora 1 · En curso</div>
+      <h2>En el lugar, <em>con el teléfono.</em></h2>
+      <p class="bajada">El operario escanea el QR, abre la orden y va marcando el checklist. Saca fotos; se achican en el teléfono antes de subir. <strong>Si se queda sin señal, sigue trabajando igual.</strong></p>
+      <ul class="libro">
+        <li>Checklist y notas se guardan en el teléfono a cada cambio.</li>
+        <li>Fotos de a una, comprimidas: subir varias seguidas no lo cuelga.</li>
+        <li>Sin señal se guarda y se envía solo después. <a href="/trabajo-sin-senal/">Ver cómo →</a></li>
+      </ul>
     </div>
-  </div>
-</section>
+    <div class="objeto aparece">
+      <div class="panel linea"><ol><li class="escalon ok"><code>14:02</code><b>Escaneó el QR del lugar</b><span>Hospital Sur · a 6 m</span></li><li class="escalon ok"><code>14:03</code><b>Empezó la orden</b><span>Pasa a "en curso" para todos</span></li><li class="escalon ok"><code>14:20</code><b>Checklist 2 de 4</b><span>Guardado en el teléfono</span></li><li class="escalon ya"><code>14:31</code><b>Sin señal en la sala de bombas</b><span>3 cambios esperando en el teléfono</span></li><li class="escalon ok"><code>14:48</code><b>Volvió la señal</b><span>Enviado en orden, sin duplicar</span></li></ol></div>
+    </div>
+  </section>
 
-<section class="l-cta" id="demo">
-  <h2>Cerrá tu primera OT digital <em>esta semana.</em></h2>
-  <p>Agendá una demo personalizada. Te mostramos DH1 funcionando con un caso similar al tuyo, sin compromiso.</p>
-  <form class="demo-form" data-subject="Solicitud de demo — Órdenes de trabajo digitales" novalidate>     <div class="df-grid">       <label><span>Nombre *</span><input name="nombre" required autocomplete="name"></label>       <label><span>Empresa *</span><input name="empresa" required autocomplete="organization"></label>       <label><span>Email *</span><input type="email" name="email" required autocomplete="email"></label>       <label><span>Teléfono</span><input type="tel" name="telefono" autocomplete="tel"></label>       <label class="df-full"><span>Rubro</span><input name="rubro" placeholder="Construcción, mantenimiento, servicios…"></label>       <label class="df-full"><span>Comentarios</span><textarea name="comentarios" rows="4" placeholder="Contanos brevemente qué querés resolver"></textarea></label>     </div>     <input type="checkbox" name="botcheck" class="df-hp" tabindex="-1" autocomplete="off" aria-hidden="true">     <div class="df-actions">       <button type="submit" class="btn-primary">Solicitar demo<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></button>       <p class="df-status" role="status" aria-live="polite"></p>     </div>   </form>
-</section>
+  <section class="cap" id="cierre" data-etq="Hora 3">
+    <div class="texto aparece">
+      <div class="marca-hora">Hora 3 · Cierre</div>
+      <h2>No se cierra <em>a medias.</em></h2>
+      <p class="bajada">Sin el checklist completo, o sin el motivo de lo que no se pudo hacer, la orden no se cierra. Si pide fotos, sin fotos tampoco. <strong>El responsable del lugar firma en la pantalla</strong> y el sistema guarda la ubicación y la hora del cierre.</p>
+      <ul class="libro">
+        <li>Firmá acá con el mouse o el dedo.</li>
+        <li>La ubicación del cierre la pone el sistema, no el operario.</li>
+        <li>Lo que faltó de material queda anotado para el pañol.</li>
+      </ul>
+    </div>
+    <div class="objeto aparece">
+      <div class="hoja orden">
+        <span class="cinta" aria-hidden="true"></span>
+        <div class="enc"><b>Orden de trabajo</b><code>OT-000174</code></div>
+        <ul class="checks">
+          <li>Cortar la alimentación</li><li>Revisar presostato</li><li>Cambiar sello mecánico</li><li>Probar 15 minutos</li>
+        </ul>
+        <div class="fotos" aria-hidden="true">
+          <svg viewBox="0 0 40 30"><rect width="40" height="30" fill="#9fb0c9"/><rect x="0" y="20" width="40" height="10" fill="#6b7d99"/><circle cx="14" cy="16" r="6" fill="#2e4a73"/><rect x="18" y="14" width="18" height="4" fill="#2e4a73"/></svg>
+          <svg viewBox="0 0 40 30"><rect width="40" height="30" fill="#c2c9d4"/><rect x="10" y="4" width="20" height="24" rx="1" fill="#545f73"/><rect x="13" y="7" width="3" height="6" fill="#f5b83a"/><rect x="18" y="7" width="3" height="6" fill="#f5b83a"/><rect x="23" y="7" width="3" height="6" fill="#d7dde7"/></svg>
+          <svg viewBox="0 0 40 30"><rect width="40" height="30" fill="#b6c4b0"/><rect x="0" y="14" width="40" height="3" fill="#59687e"/><circle cx="20" cy="15" r="5" fill="#2e6cd6"/><circle cx="20" cy="15" r="2" fill="#e7ecf4"/></svg>
+        </div>
+        <div class="gps">Cierre · -34,6421 · -58,4372 · ±8 m · 16:29</div>
+        <div class="firma-zona">
+          <canvas id="firma" aria-label="Firmá con el mouse o el dedo"></canvas>
+          <span class="linea-f" aria-hidden="true"></span>
+          <p><span>Conformidad · responsable del lugar</span><button type="button" id="borrarFirma">Borrar</button></p>
+        </div>
+        <div class="sello" id="sello">APROBADA<small>jefe de sitio · 16:41</small></div>
+        <div class="botones" style="margin-top:14px"><button type="button" class="btn prim" id="aprobar" style="background:#1b2233;color:#fff">Enviar al jefe</button></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cap" id="validada" data-etq="Día 2">
+    <div class="texto aparece">
+      <div class="marca-hora">Día 2 · Validada</div>
+      <h2>Queda en la historia <em>del equipo.</em></h2>
+      <p class="bajada">El jefe la aprueba o la devuelve con un comentario. Aprobada, sale en PDF con fotos y firma, y <strong>se suma sola al historial del equipo:</strong> la próxima vez que alguien lo escanee, ve todo lo que se le hizo.</p>
+      <ul class="libro">
+        <li>El historial lo escribe la base: nadie tiene que acordarse.</li>
+        <li>Devolver pide motivo, y el operario lo ve en su teléfono.</li>
+        <li>Todo queda auditado: quién, qué y cuándo.</li>
+      </ul>
+    </div>
+    <div class="objeto aparece">
+      <div class="hoja ficha gira-d">
+        <span class="cinta" aria-hidden="true"></span>
+        <div class="etq">Historial · Bomba cisterna 2</div>
+        <h3>Hospital Sur, sala de bombas</h3>
+        <ul class="filas"><li class="escalon"><span>OT-000175 · Sello mecánico</span><span>hoy</span></li><li class="escalon"><span>OT-000131 · Preventivo trimestral</span><span>hace 41 días</span></li><li class="escalon"><span>OT-000098 · Presostato</span><span>hace 3 meses</span></li><li class="escalon"><span>Movida desde el pañol</span><span>hace 8 meses</span></li><li class="escalon"><span>Alta con QR</span><span>hace 1 año</span></li></ul>
+        
+        <span class="marca-tinta tinta-verde escalon">APROBADA · PDF</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="preguntas" id="preguntas" aria-labelledby="tit-preguntas">
+    <div class="marca-hora aparece" style="font:13px var(--mono);letter-spacing:.1em;color:var(--ambar);margin-bottom:18px">Preguntas</div>
+    <h2 id="tit-preguntas" class="aparece">Lo que nos <em>preguntan.</em></h2>
+    <div class="lista">
+      <details class="hoja aparece" open><summary>¿Qué es una orden de trabajo digital?</summary><p>Es la versión digital de la OT en papel: un registro de qué hay que hacer, quién lo hace, dónde y cuándo, que se completa desde el celular y queda guardado con firma, fotos y ubicación.</p></details>
+      <details class="hoja aparece"><summary>¿La firma digital tiene validez?</summary><p>La firma en pantalla funciona como constancia de conformidad del trabajo realizado dentro de tu operación. Para usos con requisitos legales específicos, consultá con tu asesor.</p></details>
+      <details class="hoja aparece"><summary>¿Hace falta instalar algo?</summary><p>No. Las órdenes se abren desde el navegador del celular o la tablet.</p></details>
+      <details class="hoja aparece"><summary>¿Puedo ver el historial de órdenes de un equipo?</summary><p>Sí. Cada OT queda vinculada a su obra o equipo, así que ves todas las intervenciones anteriores en un solo lugar.</p></details>
+      <details class="hoja aparece"><summary>¿Qué pasa si en el lugar no hay señal?</summary><p>El operario sigue trabajando: lo que hace queda guardado en el teléfono y se envía cuando vuelve la señal, en orden y sin duplicar.</p></details>
+    </div>
+  </section>
+
+  <section class="cap final" id="demo" data-etq="Ahora">
+    <div class="texto aparece">
+      <div class="marca-hora">Ahora · Demo</div>
+      <h2>Mostranos <em>tu caso.</em></h2>
+      <p class="bajada">Te mostramos DH1 con algo parecido a lo tuyo: tus lugares, tus equipos, tus obras. <strong>Sin compromiso y en una llamada.</strong></p>
+      <ul class="libro">
+        <li>Web y teléfono. Funciona sin señal en el campo.</li>
+        <li>Cada empresa ve solo lo suyo: lo garantiza la base de datos.</li>
+        <li><a href="/">Ver un día de obra completo →</a></li>
+      </ul>
+      <div class="otras"><a href="/software-mantenimiento-preventivo/">Mantenimiento →</a><a href="/certificados-de-obra/">Certificados →</a><a href="/trabajo-sin-senal/">Campo sin señal →</a><a href="/erp-constructoras/">Constructoras →</a></div>
+    </div>
+    <div class="objeto aparece">
+      <div class="hoja form">
+        <span class="cinta" aria-hidden="true"></span>
+        <h3>Pedir una demo</h3>
+        <p>Te escribimos en el día.</p>
+        <form class="demo-form" data-subject="Solicitud de demo — Órdenes de trabajo digitales — DH1 Software" novalidate>     <div class="df-grid">       <label><span>Nombre *</span><input name="nombre" required autocomplete="name"></label>       <label><span>Empresa *</span><input name="empresa" required autocomplete="organization"></label>       <label><span>Email *</span><input type="email" name="email" required autocomplete="email"></label>       <label><span>Teléfono</span><input type="tel" name="telefono" autocomplete="tel"></label>       <label class="df-full"><span>Rubro</span><input name="rubro" placeholder="Construcción, mantenimiento, servicios…"></label>       <label class="df-full"><span>Comentarios</span><textarea name="comentarios" rows="4" placeholder="Contanos brevemente qué querés resolver"></textarea></label>     </div>     <input type="checkbox" name="botcheck" class="df-hp" tabindex="-1" autocomplete="off" aria-hidden="true">     <div class="df-actions">       <button type="submit" class="btn-primary">Solicitar demo<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></button>       <p class="df-status" role="status" aria-live="polite"></p>     </div>   </form>
+      </div>
+    </div>
+  </section>
 </main>
 
-<footer class="l-foot">
-  <div class="row">
-    <span>© 2026 DH1 Software · Buenos Aires, Argentina</span>
-    <nav aria-label="Soluciones">
-      <a href="/">Inicio</a>
-      <a href="/erp-constructoras/">ERP para constructoras</a>
-      <a href="/software-mantenimiento-preventivo/">Mantenimiento preventivo</a>
-      <a href="/ordenes-de-trabajo-digitales/">Órdenes de trabajo</a>
-      <a href="#demo">Solicitar demo</a>
-    </nav>
+<footer class="pie">
+  <div class="pie-grid">
+    <div><svg class="brand-svg-footer" style="width:230px;height:auto" viewBox="0 0 460 140" xmlns="http://www.w3.org/2000/svg" aria-label="DH1 Software">
+  <defs>
+    <linearGradient id="flB" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#2e6cd6"/><stop offset="100%" stop-color="#1e4fa3"/></linearGradient>
+    <linearGradient id="flG" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f5b83a"/><stop offset="100%" stop-color="#d89215"/></linearGradient>
+    <linearGradient id="flW" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ffffff"/><stop offset="100%" stop-color="#c9d6ef"/></linearGradient>
+  </defs>
+  <!-- Mark -->
+  <g transform="translate(5, 10) scale(0.6)">
+    <g fill="none" stroke-width="3.5" stroke-linecap="round">
+      <ellipse cx="100" cy="100" rx="82" ry="30" stroke="url(#flB)" transform="rotate(10 100 100)"/>
+      <ellipse cx="100" cy="100" rx="82" ry="30" stroke="url(#flG)" transform="rotate(-20 100 100)"/>
+      <ellipse cx="100" cy="100" rx="82" ry="30" stroke="url(#flB)" transform="rotate(55 100 100)" opacity="0.9"/>
+      <ellipse cx="100" cy="100" rx="82" ry="30" stroke="url(#flG)" transform="rotate(-60 100 100)" opacity="0.9"/>
+      <ellipse cx="100" cy="100" rx="82" ry="30" stroke="url(#flB)" transform="rotate(100 100 100)" opacity="0.75"/>
+      <ellipse cx="100" cy="100" rx="82" ry="30" stroke="url(#flG)" transform="rotate(135 100 100)" opacity="0.75"/>
+    </g>
+    <g>
+      <circle cx="100" cy="18" r="3.5" fill="url(#flG)"/>
+      <circle cx="100" cy="182" r="3.5" fill="url(#flB)"/>
+      <circle cx="18" cy="100" r="3.5" fill="url(#flB)"/>
+      <circle cx="182" cy="100" r="3.5" fill="url(#flG)"/>
+      <circle cx="42" cy="42" r="2.8" fill="url(#flG)"/>
+      <circle cx="158" cy="158" r="2.8" fill="url(#flB)"/>
+      <circle cx="158" cy="42" r="2.8" fill="url(#flB)"/>
+      <circle cx="42" cy="158" r="2.8" fill="url(#flG)"/>
+    </g>
+    <rect x="38" y="58" width="124" height="84" fill="#141a2e" opacity="0.7" rx="4"/>
+    <g font-family="'Bricolage Grotesque', 'Inter', sans-serif" font-weight="800" letter-spacing="-0.06em">
+      <text x="46" y="134" font-size="72" fill="url(#flB)">D</text>
+      <text x="90" y="134" font-size="72" fill="url(#flB)">H</text>
+      <text x="134" y="134" font-size="72" fill="url(#flG)">1</text>
+    </g>
+    <path d="M 152 72 L 152 56 L 145 63 M 152 56 L 159 63" stroke="url(#flG)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- Wordmark -->
+  <g font-family="'Bricolage Grotesque', 'Inter', sans-serif" transform="translate(135, 0)">
+    <text x="0" y="78" font-size="66" font-weight="800" letter-spacing="-0.04em">
+      <tspan fill="url(#flB)">DH</tspan><tspan fill="url(#flG)">1</tspan>
+    </text>
+    <text x="3" y="108" font-size="16" font-weight="500" letter-spacing="0.4em" fill="#8896b4">SOFTWARE</text>
+  </g>
+</svg><p>ERP para empresas de construcción y mantenimiento: obras, órdenes de trabajo, mantenimiento preventivo, pañol y certificación, en el campo y en la oficina.</p></div>
+    <div><h5>El día</h5><ul><li><a href="/#fichaje">Fichaje</a></li><li><a href="/#reparto">Órdenes</a></li><li><a href="/#emergencia">Emergencias</a></li><li><a href="/#sotano">Sin señal</a></li><li><a href="/#el-dia">El día entero</a></li></ul></div>
+    <div><h5>Soluciones</h5><ul><li><a href="/ordenes-de-trabajo-digitales/">Órdenes de trabajo digitales</a></li><li><a href="/software-mantenimiento-preventivo/">Mantenimiento preventivo</a></li><li><a href="/certificados-de-obra/">Certificados de obra</a></li><li><a href="/trabajo-sin-senal/">Trabajo de campo sin señal</a></li><li><a href="/erp-constructoras/">ERP para constructoras</a></li></ul></div>
+    <div><h5>Contacto</h5><ul><li><a href="#demo">Pedir una demo</a></li><li><span style="color:var(--texto-3);font-size:14px">Buenos Aires, Argentina</span></li></ul></div>
+  </div>
+  <div class="abajo">
+    <span>© 2026 DH1 Software</span>
+    <span class="presencia">Presencia en
+      <svg viewBox="0 0 60 40" role="img" aria-label="Argentina"><rect width="60" height="13.333" fill="#74ACDF"/><rect width="60" height="13.333" y="13.333" fill="#FFFFFF"/><rect width="60" height="13.333" y="26.666" fill="#74ACDF"/><circle cx="30" cy="20" r="3.2" fill="#F6B40E"/></svg>
+      <svg viewBox="0 0 60 30" role="img" aria-label="Canadá"><rect width="15" height="30" fill="#D52B1E"/><rect width="30" height="30" x="15" fill="#FFFFFF"/><rect width="15" height="30" x="45" fill="#D52B1E"/><path d="M30 8 L31.5 11.5 L35 10 L33 13.5 L36 15 L32 16 L32.8 18.5 L30 17 L27.2 18.5 L28 16 L24 15 L27 13.5 L25 10 L28.5 11.5 Z" fill="#D52B1E"/></svg>
+    </span>
+    <span>v2.4</span>
   </div>
 </footer>
 
 <script src="/assets/demo-form.js" defer></script>
+<script src="/assets/dia.js" defer></script>
 </body>
 </html>
