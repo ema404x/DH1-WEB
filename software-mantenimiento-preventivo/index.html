@@ -81,18 +81,18 @@
         },
         {
           "@type": "Question",
-          "name": "¿Los técnicos necesitan una app aparte?",
+          "name": "¿Los técnicos necesitan una aplicación aparte?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. DH1 funciona desde el navegador del celular o la tablet; el técnico abre la orden, la resuelve y la cierra desde ahí."
+            "text": "No. DH1 funciona desde el navegador del teléfono o la tablet: el técnico abre la orden, la ejecuta y la cierra desde allí."
           }
         },
         {
           "@type": "Question",
-          "name": "¿Se puede migrar el plan que hoy tengo en Excel?",
+          "name": "¿Se puede migrar el plan que hoy está en Excel?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sí. En la etapa de configuración cargamos tu inventario de equipos y tus planes actuales para que arranques con los datos que ya tenés."
+            "text": "Sí. Durante la configuración se importan el inventario de equipos y los planes actuales, para comenzar con la información existente."
           }
         }
       ]
@@ -179,29 +179,37 @@
   <path d="M 152 72 L 152 56 L 145 63 M 152 56 L 159 63" stroke="url(#nmG)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 </svg><span>DH<b>1</b></span></a>
   <ul id="menu">
-    <li><a href="/ordenes-de-trabajo-digitales/">Órdenes de trabajo</a></li>
-    <li><a href="/software-mantenimiento-preventivo/" aria-current="page">Mantenimiento</a></li>
-    <li><a href="/certificados-de-obra/">Certificados</a></li>
-    <li><a href="/trabajo-sin-senal/">Campo sin señal</a></li>
-    <li><a href="/erp-constructoras/">Obras</a></li>
+    <li><a href="/#plataforma">Plataforma</a></li>
+    <li><a href="/#modulos">Módulos</a></li>
+    <li class="sub"><a href="/#soluciones">Soluciones</a>
+      <ul>
+        <li><a href="/ordenes-de-trabajo-digitales/">Órdenes de trabajo digitales</a></li>
+        <li><a href="/software-mantenimiento-preventivo/" aria-current="page">Mantenimiento preventivo</a></li>
+        <li><a href="/certificados-de-obra/">Certificados de obra</a></li>
+        <li><a href="/trabajo-sin-senal/">Operación sin conexión</a></li>
+        <li><a href="/erp-constructoras/">Gestión de obras de mantenimiento</a></li>
+      </ul>
+    </li>
+    <li><a href="/#recorrido">Recorrido</a></li>
+    <li><a href="/#seguridad">Seguridad</a></li>
   </ul>
-  <a href="#demo" class="pedir">Pedir una demo</a>
+  <a href="#demo" class="pedir">Solicitar demo</a>
   <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
   </button>
 </header>
 
-<aside class="riel" aria-label="El año de una caldera">
+<aside class="riel" aria-label="Ciclo anual de un equipo">
   <div class="hora etq" id="hora" aria-live="off">Enero</div>
-  <div class="dia">El año de una caldera</div>
+  <div class="dia">Ciclo anual de un equipo</div>
   <ol id="indice">
-    <li><a href="#inicio"><b>Enero</b>Empieza</a></li>
+    <li><a href="#inicio"><b>Enero</b>Inicio</a></li>
     <li><a href="#alta"><b>Enero</b>Alta</a></li>
-    <li><a href="#preventivo"><b>Abril</b>Vence</a></li>
+    <li><a href="#preventivo"><b>Abril</b>Vencimiento</a></li>
     <li><a href="#correctiva"><b>Julio</b>Falla</a></li>
     <li><a href="#temporada"><b>Octubre</b>Temporada</a></li>
     <li><a href="#expediente"><b>Diciembre</b>Expediente</a></li>
-    <li><a href="#demo"><b>Abril otra vez</b>Demo</a></li>
+    <li><a href="#demo"><b>Próximo ciclo</b>Demostración</a></li>
     <li class="avance" aria-hidden="true"></li>
   </ol>
 </aside>
@@ -211,25 +219,25 @@
     <div class="texto">
       <nav class="miga aparece" aria-label="Estás en"><a href="/">Inicio</a><span>/</span><span>Mantenimiento preventivo</span></nav>
       <div class="reloj-gigante aparece" aria-hidden="true">Enero</div>
-      <h1 class="aparece">Una caldera, un año, <em>ninguna fecha olvidada.</em></h1>
-      <p class="bajada aparece">Se da de alta, se le pone un QR y una rutina. Después el sistema se acuerda solo: genera las órdenes cuando vencen, respeta la temporada y guarda cada intervención. <strong>Este es el año de una caldera en DH1.</strong></p>
+      <h1 class="aparece">Mantenimiento preventivo <em>sin vencimientos olvidados.</em></h1>
+      <p class="bajada aparece">Cada equipo se registra con su código QR y su plan de mantenimiento. A partir de ahí, el sistema genera las órdenes en cada vencimiento, respeta las temporadas y documenta cada intervención. <strong>Este es el ciclo anual de una caldera en DH1.</strong></p>
       <div class="botones aparece">
-        <a href="#alta" class="btn prim">Empezar <span class="bajar">↓</span></a>
-        <a href="#demo" class="btn sec">Pedir una demo</a>
+        <a href="#alta" class="btn prim">Ver el recorrido <span class="bajar">↓</span></a>
+        <a href="#demo" class="btn sec">Solicitar una demostración</a>
       </div>
-      <p class="nota aparece">Bajá: el reloj de la izquierda ahora pasa los meses.</p>
+      <p class="nota aparece">Desplazate para avanzar: el indicador de la izquierda recorre los meses del año.</p>
     </div>
   </section>
 
   <section class="cap" id="alta" data-etq="Enero">
     <div class="texto aparece">
       <div class="marca-hora">Enero · Alta</div>
-      <h2>Entra con <em>QR y rutina.</em></h2>
-      <p class="bajada">La caldera se carga con su lugar, sus datos y sus documentos. Se le pega un QR. <strong>Su rutina dice cada cuánto se revisa y en qué meses del año.</strong></p>
+      <h2>Alta del equipo <em>con QR y plan.</em></h2>
+      <p class="bajada">La caldera se registra con su ubicación, sus datos técnicos y su documentación, y se identifica con un código QR. <strong>Su plan define la frecuencia de mantenimiento y los meses en que aplica.</strong></p>
       <ul class="libro">
-        <li>Un solo formato de QR, para lugares y equipos.</li>
-        <li>Manuales, planos y garantías, en la ficha del equipo.</li>
-        <li>QR de todos los equipos en un PDF para imprimir.</li>
+        <li>Un formato de QR único para establecimientos y equipos.</li>
+        <li>Manuales, planos y garantías en la ficha del equipo.</li>
+        <li>Códigos QR de todos los equipos en un PDF listo para imprimir.</li>
       </ul>
     </div>
     <div class="objeto aparece">
@@ -246,13 +254,13 @@
 
   <section class="cap" id="preventivo" data-etq="Abril">
     <div class="texto aparece">
-      <div class="marca-hora">Abril · Vence</div>
-      <h2>Vence y <em>la orden aparece.</em></h2>
-      <p class="bajada">Lo que vence en los próximos días se vuelve orden de trabajo, asignada y en el teléfono de la cuadrilla. <strong>Una sola orden abierta por rutina y lugar:</strong> generar dos veces no duplica.</p>
+      <div class="marca-hora">Abril · Vencimiento</div>
+      <h2>Órdenes preventivas <em>generadas automáticamente.</em></h2>
+      <p class="bajada">Los vencimientos próximos se convierten en órdenes de trabajo asignadas y disponibles en el teléfono de la cuadrilla. <strong>Una única orden abierta por plan y establecimiento,</strong> sin duplicados.</p>
       <ul class="libro">
-        <li>La próxima fecha avanza sola al generar.</li>
-        <li>El calendario muestra lo que vence en el mes.</li>
-        <li>Alertas de lo vencido en el tablero.</li>
+        <li>La próxima fecha se recalcula automáticamente.</li>
+        <li>Calendario mensual de vencimientos.</li>
+        <li>Alertas de tareas vencidas en el tablero.</li>
       </ul>
     </div>
     <div class="objeto aparece">
@@ -271,15 +279,159 @@
     </div>
   </section>
 
+  <!-- 16:30 cierre -->
+  <section class="cap" id="cierre" data-hora="16:30">
+    <div class="texto aparece">
+      <div class="marca-hora">16:30 · Cierre de órdenes</div>
+      <h2>Cierre con evidencia <em>y conformidad firmada.</em></h2>
+      <p class="bajada">Una orden no se cierra sin su checklist completo o la justificación de lo pendiente, ni sin las fotos requeridas. <strong>El responsable del establecimiento firma la conformidad en pantalla</strong> y el jefe de sitio aprueba la orden o la devuelve con observaciones.</p>
+      <ul class="libro">
+        <li>Firmá en el recuadro con el mouse o el dedo.</li>
+        <li>Hora y ubicación del cierre registradas por el sistema.</li>
+        <li>Faltantes de material informados al pañol.</li>
+      </ul>
+    </div>
+    <div class="objeto aparece">
+      <div class="hoja orden">
+        <span class="cinta" aria-hidden="true"></span>
+        <div class="enc"><b>Orden de trabajo</b><code>OT-000174</code></div>
+        <ul class="checks">
+          <li>Cortar la alimentación</li><li>Revisar presostato</li><li>Cambiar sello mecánico</li><li>Probar 15 minutos</li>
+        </ul>
+        <div class="fotos" aria-hidden="true">
+          <svg viewBox="0 0 40 30"><rect width="40" height="30" fill="#9fb0c9"/><rect x="0" y="20" width="40" height="10" fill="#6b7d99"/><circle cx="14" cy="16" r="6" fill="#2e4a73"/><rect x="18" y="14" width="18" height="4" fill="#2e4a73"/></svg>
+          <svg viewBox="0 0 40 30"><rect width="40" height="30" fill="#c2c9d4"/><rect x="10" y="4" width="20" height="24" rx="1" fill="#545f73"/><rect x="13" y="7" width="3" height="6" fill="#f5b83a"/><rect x="18" y="7" width="3" height="6" fill="#f5b83a"/><rect x="23" y="7" width="3" height="6" fill="#d7dde7"/></svg>
+          <svg viewBox="0 0 40 30"><rect width="40" height="30" fill="#b6c4b0"/><rect x="0" y="14" width="40" height="3" fill="#59687e"/><circle cx="20" cy="15" r="5" fill="#2e6cd6"/><circle cx="20" cy="15" r="2" fill="#e7ecf4"/></svg>
+        </div>
+        <div class="gps">Cierre · -34,6421 · -58,4372 · ±8 m · 16:29</div>
+        <div class="firma-zona">
+          <canvas id="firma" aria-label="Firmá con el mouse o el dedo"></canvas>
+          <span class="linea-f" aria-hidden="true"></span>
+          <p><span>Conformidad · responsable del lugar</span><button type="button" id="borrarFirma">Borrar</button></p>
+        </div>
+        <div class="sello" id="sello">APROBADA<small>jefe de sitio · 16:41</small></div>
+        <div class="botones" style="margin-top:14px"><button type="button" class="btn prim" id="aprobar" style="background:#1b2233;color:#fff">Enviar al jefe</button></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 18:10 certificado -->
+  <section class="cap" id="certificado" data-hora="18:10">
+    <div class="texto aparece">
+      <div class="marca-hora">18:10 · Certificación de obra</div>
+      <h2>Certificación con <em>circuito de firmas.</em></h2>
+      <p class="bajada">El certificado se genera a partir de la orden de compra, considerando lo ya certificado en cada ítem. Recorre la cadena de aprobación y <strong>recibe su número recién con la última firma.</strong> No admite certificar en exceso ni modificar lo emitido, y quien lo emite no puede aprobarlo.</p>
+      <ul class="libro">
+        <li>Generación masiva de abonos mensuales.</li>
+        <li>Checklist de revisión previo a cada firma.</li>
+        <li>PDF con firmas y registro de auditoría. <a href="/certificados-de-obra/">Certificados de obra →</a></li>
+      </ul>
+    </div>
+    <div class="objeto aparece">
+      <div class="hoja certificado" id="certObj">
+        <span class="cinta" aria-hidden="true"></span>
+        <div class="numero-cert" id="numCert">Certificado<b>N° —</b></div>
+        <div class="etq">Termografía anual · Comuna 8B</div>
+        <h3>Certificado de avance</h3>
+        <table>
+          <thead><tr><th>Ítem</th><th>Anterior</th><th>Presente</th><th>Acumulado</th></tr></thead>
+          <tbody>
+            <tr><td>1 · Relevamiento</td><td>100 %</td><td>—</td><td>$ 480.000</td></tr>
+            <tr><td>2 · Termografía tableros</td><td>40 %</td><td>35 %</td><td>$ 630.000</td></tr>
+            <tr><td>3 · Informe final</td><td>—</td><td>50 %</td><td>$ 210.000</td></tr>
+          </tbody>
+        </table>
+        <div class="cadena" id="cadena">
+          <span class="paso"><i>JR</i>Jefe de sitio</span><span class="flecha">→</span>
+          <span class="paso"><i>LD</i>Inspección</span><span class="flecha">→</span>
+          <span class="paso"><i>MG</i>Coordinación</span><span class="flecha">→</span>
+          <span class="paso"><i>GG</i>Gerencia</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 19:00 el día -->
+  <section class="cap mapa-cap" id="el-dia" data-hora="19:00">
+    <div class="texto aparece" style="max-width:900px">
+      <div class="marca-hora">19:00 · Visión general</div>
+      <h2>Toda la operación, <em>en un solo mapa.</em></h2>
+      <p class="bajada">Cada punto representa una orden: <strong>rojo, emergencia; ámbar, en curso; verde, cerrada.</strong> Los marcadores blancos son cuadrillas en desplazamiento. Seleccioná un punto para ver su detalle.</p>
+    </div>
+    <div class="objeto aparece">
+      <div class="pantalla mapa-marco">
+        <div class="mapa-lienzo" id="mapa"><div class="mapa-ficha" id="mapaFicha"></div></div>
+        <div class="mapa-panel">
+          <div class="mapa-reloj" id="mapaReloj">06:00</div>
+          <div class="mapa-ctrl">
+            <button type="button" id="mapaPlay" aria-pressed="true">Pausa</button>
+            <button type="button" data-vel="1" aria-pressed="true">1×</button>
+            <button type="button" data-vel="4" aria-pressed="false">4×</button>
+            <button type="button" id="mapaReiniciar">↺</button>
+          </div>
+          <div class="contadores">
+            <div class="k-pend"><b id="kPend">0</b><span>Pendientes</span></div>
+            <div class="k-curso"><b id="kCurso">0</b><span>En curso</span></div>
+            <div class="k-cerr"><b id="kCerr">0</b><span>Cerradas</span></div>
+            <div class="k-urg"><b id="kUrg">0</b><span>Emergencias</span></div>
+          </div>
+          <div class="mapa-log" id="mapaLog" aria-live="off"></div>
+          <div class="mapa-leyenda">Simulación de una jornada de 06 a 22 h con datos ficticios.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <!-- módulos -->
+  <section class="bloque" id="modulos" aria-labelledby="tit-modulos">
+    <div class="envoltura">
+      <div class="cabecera aparece">
+        <p class="sobre">Módulos</p>
+        <h2 id="tit-modulos">Todo lo que tu operación necesita, <em>integrado.</em></h2>
+        <p class="intro">Veinte módulos que comparten la misma base de datos. Sin planillas paralelas ni información duplicada.</p>
+      </div>
+      <div class="filtros aparece" role="group" aria-label="Filtrar módulos">
+        <button type="button" data-f="todos" aria-pressed="true">Todos</button>
+        <button type="button" data-f="campo" aria-pressed="false">Campo</button>
+        <button type="button" data-f="operacion" aria-pressed="false">Operación</button>
+        <button type="button" data-f="gestion" aria-pressed="false">Gestión</button>
+        <button type="button" data-f="administracion" aria-pressed="false">Administración</button>
+      </div>
+      <div class="grilla-mod aparece" id="grillaMod">
+        <article class="mod tilt" data-c="operacion" data-tilt="7"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 3h6v3H9zM9 13l2 2 4-4"/></svg></div><h3>Órdenes de trabajo</h3><p>Tablero por estado, plantillas, checklist, fotos, firma de conformidad y PDF de cada orden.</p><span class="cat">Operación</span></article>
+        <article class="mod tilt" data-c="operacion" data-tilt="7"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M8 15h3M13 15h3"/></svg></div><h3>Mantenimiento preventivo</h3><p>Planes por equipo y frecuencia, rutinas estacionales y generación automática de órdenes.</p><span class="cat">Operación</span></article>
+        <article class="mod tilt" data-c="operacion" data-tilt="7"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 20h20L12 3z"/><path d="M12 10v4M12 17h.01"/></svg></div><h3>Emergencias</h3><p>Reporte inmediato, orden urgente automática y notificación en tiempo real a los responsables.</p><span class="cat">Operación</span></article>
+        <article class="mod tilt" data-c="operacion" data-tilt="7"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5a7 7 0 1 0-14 0C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div><h3>Mapa operativo</h3><p>Órdenes y establecimientos georreferenciados para planificar zonas y recorridos.</p><span class="cat">Operación</span></article>
+        <article class="mod tilt" data-c="operacion" data-tilt="7"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M8.5 11h5"/></svg></div><h3>Inspecciones e informes</h3><p>Relevamientos con fotos, informes técnicos y planificación de intervenciones.</p><span class="cat">Operación</span></article>
+        <article class="mod tilt" data-c="campo" data-tilt="7"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div><h3>Aplicación de campo</h3><p>Ejecución desde el teléfono con checklist, fotos comprimidas, firma y geolocalización.</p><span class="cat">Campo</span></article>
+        <article class="mod tilt" data-c="campo" data-tilt="7"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 8.5a15 15 0 0 1 20 0M5.5 12a10 10 0 0 1 13 0M9 15.5a5 5 0 0 1 6 0M12 19h.01M3 3l18 18"/></svg></div><h3>Operación sin conexión</h3><p>Cola local de cambios con sincronización automática, sin pérdidas ni duplicados.</p><span class="cat">Campo</span></article>
+        <article class="mod tilt" data-c="campo" data-tilt="7"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Control de asistencia</h3><p>Fichaje por QR del establecimiento o tablet de cuadrilla, con hora y ubicación.</p><span class="cat">Campo</span></article>
+        <article class="mod tilt" data-c="campo" data-tilt="7"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6" height="6"/><rect x="14" y="4" width="6" height="6"/><rect x="4" y="14" width="6" height="6"/><path d="M14 14h2v2h-2zM18 18h2v2h-2zM14 18h2M18 14h2"/></svg></div><h3>Portal por código QR</h3><p>Consulta y ejecución de órdenes desde el QR del lugar, sin necesidad de usuario.</p><span class="cat">Campo</span></article>
+        <article class="mod tilt" data-c="gestion" data-tilt="7"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg></div><h3>Activos y equipos</h3><p>Expediente técnico, QR por equipo, garantías y control de equipos fuera de servicio.</p><span class="cat">Gestión</span></article>
+        <article class="mod tilt" data-c="gestion" data-tilt="7"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 7v10l9 4 9-4V7M12 11v10"/></svg></div><h3>Inventario y pañol</h3><p>Stock por depósito, mínimos, préstamo de herramientas y costo promedio ponderado.</p><span class="cat">Gestión</span></article>
+        <article class="mod tilt" data-c="gestion" data-tilt="7"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.5 11h11L21 7H7"/><circle cx="9" cy="19" r="1.5"/><circle cx="17" cy="19" r="1.5"/></svg></div><h3>Compras y aprobaciones</h3><p>Requerimientos, pedidos de compra automáticos y circuitos de aprobación por rol.</p><span class="cat">Gestión</span></article>
+        <article class="mod tilt" data-c="gestion" data-tilt="7"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V9l6-4 6 4v12M2 21h20M9 21v-5h2v5M16 11h4v10"/></svg></div><h3>Obras y proyectos</h3><p>Jefe de sitio, inspector y plazo por obra, con avance, materiales y alertas de atraso.</p><span class="cat">Gestión</span></article>
+        <article class="mod tilt" data-c="gestion" data-tilt="7"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4V5z"/><path d="M8 10h8"/></svg></div><h3>Comunicación interna</h3><p>Foro por categorías, menciones y notificaciones dentro de la plataforma.</p><span class="cat">Gestión</span></article>
+        <article class="mod tilt" data-c="administracion" data-tilt="7"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 12h2M14 12h2M8 16h2M14 16h2"/></svg></div><h3>Presupuestos</h3><p>Presupuestos por rubro e importación directa desde planillas de cálculo.</p><span class="cat">Administración</span></article>
+        <article class="mod tilt" data-c="administracion" data-tilt="7"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></div><h3>Certificación de obra</h3><p>Certificados con cadena de firmas, control de saldos por ítem y abonos mensuales.</p><span class="cat">Administración</span></article>
+        <article class="mod tilt" data-c="administracion" data-tilt="7"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M2 20h20"/></svg></div><h3>Facturación y finanzas</h3><p>Facturas, cobranzas y tablero financiero con montos a cobrar y certificados aprobados.</p><span class="cat">Administración</span></article>
+        <article class="mod tilt" data-c="administracion" data-tilt="7"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5 6.5-5s5.7 1.5 6.5 5"/><circle cx="17" cy="9" r="2.5"/><path d="M17 14c2.3 0 4 1.3 4.5 4"/></svg></div><h3>Recursos humanos</h3><p>Legajos digitales del personal, horas por orden y costo por persona.</p><span class="cat">Administración</span></article>
+        <article class="mod tilt" data-c="administracion" data-tilt="7"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Seguridad y auditoría</h3><p>Permisos por rol, registro de sesiones y control de cambios sensibles.</p><span class="cat">Administración</span></article>
+        <article class="mod tilt" data-c="administracion" data-tilt="7"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3M7 8l5-5 5 5"/><path d="M4 15v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4"/></svg></div><h3>Importación de datos</h3><p>Carga inicial desde Excel y SAP de activos, obras, establecimientos y personal.</p><span class="cat">Administración</span></article>
+      </div>
+    </div>
+  </section>
+
   <section class="cap" id="correctiva" data-etq="Julio">
     <div class="texto aparece">
       <div class="marca-hora">Julio · Falla</div>
-      <h2>Igual se rompe. <em>Queda anotado.</em></h2>
-      <p class="bajada">Un lunes de julio no enciende. Alguien lo reporta desde el QR, sin usuario. Se crea la emergencia con su orden urgente, y <strong>cuando se resuelve, se cierra la orden.</strong> El preventivo y el correctivo terminan en la misma historia.</p>
+      <h2>Correctivo y preventivo <em>en el mismo historial.</em></h2>
+      <p class="bajada">Ante una falla, el responsable del establecimiento la reporta desde el QR, sin necesidad de usuario. Se genera la emergencia con su orden urgente y <strong>al resolverse, la orden se cierra automáticamente.</strong> Ambas intervenciones quedan en el historial del equipo.</p>
       <ul class="libro">
-        <li>Emergencia y orden urgente se crean juntas.</li>
-        <li>Si se repite en el mismo lugar, se ve en el tablero.</li>
-        <li>El jefe del lugar la ve y la atiende.</li>
+        <li>Emergencia y orden urgente se generan en el mismo instante.</li>
+        <li>Las fallas reiteradas en un mismo lugar se señalan en el tablero.</li>
+        <li>Notificación inmediata al jefe de sitio.</li>
       </ul>
     </div>
     <div class="objeto aparece">
@@ -295,11 +447,11 @@
   <section class="cap" id="temporada" data-etq="Octubre">
     <div class="texto aparece">
       <div class="marca-hora">Octubre · Temporada</div>
-      <h2>En octubre <em>no molesta.</em></h2>
-      <p class="bajada">Fuera de temporada la rutina espera al primer mes que le corresponde. <strong>No genera órdenes que nadie va a hacer,</strong> ni se reprograma a ciegas cada 30 días.</p>
+      <h2>Planes estacionales, <em>sin órdenes innecesarias.</em></h2>
+      <p class="bajada">Fuera de temporada, el plan queda en espera hasta el siguiente mes habilitado. <strong>No se generan órdenes que no corresponden</strong> ni se reprograma automáticamente sin criterio.</p>
       <ul class="libro">
-        <li>Rutinas por lugar, con su ciclo y sus meses.</li>
-        <li>Lo que no se hizo queda pendiente, no desaparece.</li>
+        <li>Planes por establecimiento, con su ciclo y sus meses.</li>
+        <li>Las tareas no realizadas quedan pendientes.</li>
         <li>Relevamientos de calefacción por período.</li>
       </ul>
     </div>
@@ -311,12 +463,12 @@
   <section class="cap" id="expediente" data-etq="Diciembre">
     <div class="texto aparece">
       <div class="marca-hora">Diciembre · Expediente</div>
-      <h2>Un año entero <em>en una ficha.</em></h2>
-      <p class="bajada">Cada orden cerrada, cada cambio de estado y cada movimiento quedan en el historial del equipo, <strong>escritos por la base, no a mano.</strong> Escaneás el QR y lo ves todo.</p>
+      <h2>Expediente técnico <em>completo.</em></h2>
+      <p class="bajada">Cada orden cerrada, cada cambio de estado y cada movimiento quedan en el historial del equipo, <strong>registrados por el sistema y no a mano.</strong> Toda la información está disponible al escanear su QR.</p>
       <ul class="libro">
         <li>Historial automático por equipo.</li>
-        <li>Documentos y fotos, en el mismo lugar.</li>
-        <li>Informes listos para mostrar.</li>
+        <li>Documentos y fotos centralizados.</li>
+        <li>Informes listos para presentar.</li>
       </ul>
     </div>
     <div class="objeto aparece">
@@ -332,33 +484,33 @@
   </section>
 
   <section class="preguntas" id="preguntas" aria-labelledby="tit-preguntas">
-    <div class="marca-hora aparece" style="font:13px var(--mono);letter-spacing:.1em;color:var(--ambar);margin-bottom:18px">Preguntas</div>
-    <h2 id="tit-preguntas" class="aparece">Lo que nos <em>preguntan.</em></h2>
+    <div class="marca-hora aparece" style="font:13px var(--mono);letter-spacing:.1em;color:var(--ambar);margin-bottom:18px">Consultas</div>
+    <h2 id="tit-preguntas" class="aparece">Preguntas <em>frecuentes.</em></h2>
     <div class="lista">
       <details class="hoja aparece" open><summary>¿Qué diferencia hay entre mantenimiento preventivo y correctivo?</summary><p>El preventivo se planifica con anticipación (inspecciones, cambios de filtros, calibraciones) para evitar fallas. El correctivo se hace cuando el equipo ya falló. DH1 maneja los dos y guarda ambos en el historial del activo.</p></details>
       <details class="hoja aparece"><summary>¿Sirve para edificios, hospitales o plantas industriales?</summary><p>Sí. DH1 se usa para mantenimiento industrial y de edificios: equipos, instalaciones y servicios con planes recurrentes y órdenes de trabajo.</p></details>
-      <details class="hoja aparece"><summary>¿Los técnicos necesitan una app aparte?</summary><p>No. DH1 funciona desde el navegador del celular o la tablet; el técnico abre la orden, la resuelve y la cierra desde ahí.</p></details>
-      <details class="hoja aparece"><summary>¿Se puede migrar el plan que hoy tengo en Excel?</summary><p>Sí. En la etapa de configuración cargamos tu inventario de equipos y tus planes actuales para que arranques con los datos que ya tenés.</p></details>
+      <details class="hoja aparece"><summary>¿Los técnicos necesitan una aplicación aparte?</summary><p>No. DH1 funciona desde el navegador del teléfono o la tablet: el técnico abre la orden, la ejecuta y la cierra desde allí.</p></details>
+      <details class="hoja aparece"><summary>¿Se puede migrar el plan que hoy está en Excel?</summary><p>Sí. Durante la configuración se importan el inventario de equipos y los planes actuales, para comenzar con la información existente.</p></details>
     </div>
   </section>
 
-  <section class="cap final" id="demo" data-etq="Abril otra vez">
+  <section class="cap final" id="demo" data-etq="Próximo ciclo">
     <div class="texto aparece">
-      <div class="marca-hora">Abril otra vez · Demo</div>
-      <h2>Mostranos <em>tu caso.</em></h2>
-      <p class="bajada">Te mostramos DH1 con algo parecido a lo tuyo: tus lugares, tus equipos, tus obras. <strong>Sin compromiso y en una llamada.</strong></p>
+      <div class="marca-hora">Próximo ciclo · Demostración</div>
+      <h2>Conocé DH1 aplicado <em>a tu operación.</em></h2>
+      <p class="bajada">Te mostramos la plataforma configurada con un caso similar al tuyo: tus establecimientos, tus equipos y tus obras. <strong>Sin compromiso, en una reunión breve.</strong></p>
       <ul class="libro">
-        <li>Web y teléfono. Funciona sin señal en el campo.</li>
-        <li>Cada empresa ve solo lo suyo: lo garantiza la base de datos.</li>
-        <li><a href="/">Ver un día de obra completo →</a></li>
+        <li>Web, Android e iOS, con operación de campo sin conexión.</li>
+        <li>Información aislada por empresa desde la base de datos.</li>
+        <li><a href="/#recorrido">Ver el recorrido de una jornada completa →</a></li>
       </ul>
-      <div class="otras"><a href="/ordenes-de-trabajo-digitales/">Órdenes de trabajo →</a><a href="/certificados-de-obra/">Certificados →</a><a href="/trabajo-sin-senal/">Campo sin señal →</a><a href="/erp-constructoras/">Obras →</a></div>
+      <div class="otras"><a href="/ordenes-de-trabajo-digitales/">Órdenes de trabajo →</a><a href="/certificados-de-obra/">Certificados →</a><a href="/trabajo-sin-senal/">Operación sin conexión →</a><a href="/erp-constructoras/">Obras →</a></div>
     </div>
     <div class="objeto aparece">
       <div class="hoja form">
         <span class="cinta" aria-hidden="true"></span>
-        <h3>Pedir una demo</h3>
-        <p>Te escribimos en el día.</p>
+        <h3>Solicitar una demostración</h3>
+        <p>Respondemos dentro del mismo día hábil.</p>
         <form class="demo-form" data-subject="Solicitud de demo — Mantenimiento preventivo — DH1 Software" novalidate>     <div class="df-grid">       <label><span>Nombre *</span><input name="nombre" required autocomplete="name"></label>       <label><span>Empresa *</span><input name="empresa" required autocomplete="organization"></label>       <label><span>Email *</span><input type="email" name="email" required autocomplete="email"></label>       <label><span>Teléfono</span><input type="tel" name="telefono" autocomplete="tel"></label>       <label class="df-full"><span>Rubro</span><input name="rubro" placeholder="Construcción, mantenimiento, servicios…"></label>       <label class="df-full"><span>Comentarios</span><textarea name="comentarios" rows="4" placeholder="Contanos brevemente qué querés resolver"></textarea></label>     </div>     <input type="checkbox" name="botcheck" class="df-hp" tabindex="-1" autocomplete="off" aria-hidden="true">     <div class="df-actions">       <button type="submit" class="btn-primary">Solicitar demo<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></button>       <p class="df-status" role="status" aria-live="polite"></p>     </div>   </form>
       </div>
     </div>
@@ -408,10 +560,10 @@
     </text>
     <text x="3" y="108" font-size="16" font-weight="500" letter-spacing="0.4em" fill="#8896b4">SOFTWARE</text>
   </g>
-</svg><p>ERP para empresas de construcción y mantenimiento: obras, órdenes de trabajo, mantenimiento preventivo, pañol y certificación, en el campo y en la oficina.</p></div>
-    <div><h5>El día</h5><ul><li><a href="/#fichaje">Fichaje</a></li><li><a href="/#reparto">Órdenes</a></li><li><a href="/#emergencia">Emergencias</a></li><li><a href="/#sotano">Sin señal</a></li><li><a href="/#el-dia">El día entero</a></li></ul></div>
-    <div><h5>Soluciones</h5><ul><li><a href="/ordenes-de-trabajo-digitales/">Órdenes de trabajo digitales</a></li><li><a href="/software-mantenimiento-preventivo/">Mantenimiento preventivo</a></li><li><a href="/certificados-de-obra/">Certificados de obra</a></li><li><a href="/trabajo-sin-senal/">Trabajo de campo sin señal</a></li><li><a href="/erp-constructoras/">Gestión de obras de mantenimiento</a></li></ul></div>
-    <div><h5>Contacto</h5><ul><li><a href="#demo">Pedir una demo</a></li><li><span style="color:var(--texto-3);font-size:14px">Buenos Aires, Argentina</span></li></ul></div>
+</svg><p>Plataforma de gestión de mantenimiento y obras: órdenes de trabajo, mantenimiento preventivo, inventario, compras y certificación, en la oficina y en el campo.</p></div>
+    <div><h5>Plataforma</h5><ul><li><a href="/#plataforma">Niveles de control</a></li><li><a href="/#modulos">Módulos</a></li><li><a href="/#recorrido">Recorrido de una jornada</a></li><li><a href="/#seguridad">Seguridad</a></li><li><a href="/#preguntas">Preguntas frecuentes</a></li></ul></div>
+    <div><h5>Soluciones</h5><ul><li><a href="/ordenes-de-trabajo-digitales/">Órdenes de trabajo digitales</a></li><li><a href="/software-mantenimiento-preventivo/">Mantenimiento preventivo</a></li><li><a href="/certificados-de-obra/">Certificados de obra</a></li><li><a href="/trabajo-sin-senal/">Operación sin conexión</a></li><li><a href="/erp-constructoras/">Gestión de obras de mantenimiento</a></li></ul></div>
+    <div><h5>Contacto</h5><ul><li><a href="#demo">Solicitar una demostración</a></li><li><span style="color:var(--texto-3);font-size:14px">Buenos Aires, Argentina</span></li></ul></div>
   </div>
   <div class="abajo">
     <span>© 2026 DH1 Software</span>

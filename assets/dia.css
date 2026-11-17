@@ -608,3 +608,23 @@ main { padding-left: var(--rail); }
 .linea { max-width: 460px; }
 .ficha, .pila-avisos, .medidor { max-width: 460px; }
 .objeto > .hoja.ficha, .objeto > .panel, .objeto > .pila-avisos { margin-inline: auto; }
+
+/* ================================================================ barra: sólida al bajar y submenú de soluciones */
+:root { --borde-v: rgba(140, 170, 255, .14); }
+.nav { transition: background .3s, backdrop-filter .3s, box-shadow .3s; }
+.nav.solida { background: rgba(5, 7, 15, .78); backdrop-filter: blur(14px) saturate(140%); -webkit-backdrop-filter: blur(14px) saturate(140%); box-shadow: 0 1px 0 var(--linea); }
+.nav ul li.sub { position: relative; }
+.nav ul li.sub > a::after { content: ''; display: inline-block; width: 6px; height: 6px; margin-left: 7px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: translateY(-3px) rotate(45deg); opacity: .7; }
+.nav ul li.sub > ul {
+  position: absolute; top: calc(100% + 8px); left: -10px; min-width: 290px; padding: 8px; display: flex; flex-direction: column; gap: 2px;
+  background: rgba(10, 14, 26, .96); border: 1px solid var(--borde-v); border-radius: 14px; box-shadow: 0 30px 60px -20px rgba(0,0,0,.8);
+  opacity: 0; visibility: hidden; transform: translateY(6px); transition: opacity .2s, transform .2s, visibility .2s; margin: 0;
+}
+.nav ul li.sub > ul::before { content: ''; position: absolute; left: 0; right: 0; top: -10px; height: 10px; }
+.nav ul li.sub:hover > ul, .nav ul li.sub:focus-within > ul { opacity: 1; visibility: visible; transform: none; }
+.nav ul li.sub > ul a { padding: 9px 12px; }
+
+@media (max-width: 1080px) {
+  .nav ul li.sub > ul { position: static; opacity: 1; visibility: visible; transform: none; background: none; border: 0; box-shadow: none; padding: 0 0 0 14px; min-width: 0; }
+  .nav ul li.sub > a::after { display: none; }
+}

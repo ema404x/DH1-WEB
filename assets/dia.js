@@ -171,10 +171,10 @@
     const ot = `OT-000${nEm++}`;
     const lineas = [
       `<span class="r">● </span><b>${tipo}</b> reportada · ${lugar}`,
-      `<b>${ot}</b> urgente creada en el mismo segundo`,
-      `Aviso al jefe de sitio de la zona · gerencia`,
-      `Jefe en camino · <b>atendida</b>`,
-      `<span class="g">✓</span> Resuelta · ${ot} cerrada sola`,
+      `<b>${ot}</b> urgente generada en el mismo instante`,
+      `Notificación al jefe de sitio de la zona y a gerencia`,
+      `Jefe de sitio en camino · <b>atendida</b>`,
+      `<span class="g">✓</span> Resuelta · ${ot} cerrada automáticamente`,
     ];
     if (reg.children.length > 6) reg.innerHTML = '';
     for (const l of lineas) { reg.insertAdjacentHTML('beforeend', `<div>${l}</div>`); await esperar(800); }
@@ -196,7 +196,7 @@
   const tel = $('#telefono'), senal = $('#senal'), cola = $('#cola'), aviso = $('#telAviso');
   let enCola = 0, conSenal = true;
   const pintarCola = () => {
-    cola.innerHTML = enCola ? `En el teléfono, esperando señal: <b>${enCola}</b>` : 'Nada esperando para enviar.';
+    cola.innerHTML = enCola ? `Cambios pendientes de sincronizar: <b>${enCola}</b>` : 'Sin cambios pendientes.';
   };
   $$('.tarea', tel || document).forEach((b) => b.addEventListener('click', () => {
     const ok = b.classList.toggle('ok');
@@ -209,14 +209,14 @@
     tel.classList.toggle('sin', !conSenal);
     if (conSenal && enCola) {
       tel.classList.add('enviando');
-      aviso.textContent = `Volvió la señal: enviando ${enCola}…`;
+      aviso.textContent = `Conexión recuperada: sincronizando ${enCola}…`;
       await esperar(1400);
       $$('.pend', tel).forEach((p) => p.remove());
-      aviso.textContent = `Enviado. ${enCola} ${enCola === 1 ? 'cambio llegó' : 'cambios llegaron'} a la base, sin duplicar.`;
+      aviso.textContent = `Sincronizado: ${enCola} ${enCola === 1 ? 'cambio registrado' : 'cambios registrados'} sin duplicados.`;
       enCola = 0; pintarCola();
       await esperar(2200);
       tel.classList.remove('enviando');
-      aviso.textContent = 'Sin señal: lo que hagas queda guardado en el teléfono.';
+      aviso.textContent = 'Sin conexión: los cambios se guardan en el dispositivo.';
     }
   });
 
@@ -322,6 +322,16 @@
     n.querySelector('b').textContent = 'N° 47';
     n.classList.add('listo');
   });
+
+  // barra sólida al bajar; en la home, el reloj solo se ve durante el recorrido
+  const barra = $(".nav"), rec = $(".recorrido"), riel = $(".riel");
+  const marco = () => {
+    barra && barra.classList.toggle("solida", window.scrollY > 24);
+    if (rec && riel) { const r = rec.getBoundingClientRect(), m = window.innerHeight * 0.5; riel.classList.toggle("visible", r.top < m && r.bottom > m); }
+  };
+  window.addEventListener("scroll", marco, { passive: true });
+  window.addEventListener("resize", marco);
+  marco();
 
   // capítulos que ya están en pantalla al cargar (por ejemplo, al entrar con #enlace)
   requestAnimationFrame(alScroll);
